@@ -69,59 +69,61 @@ export default function HomeFooter() {
   return (
     <footer className="relative w-full bg-redPrimary">
       <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="mx-auto flex w-full flex-row justify-stretch gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
-          <div className="w-full bg-creamSecondary text-redPrimary">
-            <img src={Logo} alt="logo" />
-            <div>
-              <div className="flex flex-row overflow-visible">
-                <div className="">
-                  <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
+        <div className="flex justify-between py-5">
+          <div className="w-1/3">
+          <div className="bg-creamSecondary text-redPrimary w-3/4 p-2">
+              <img src={Logo} alt="logo" className="h-36" />
+                <div>
+                  <div className="flex flex-row overflow-visible">
+                    <div className="">
+                      <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
+                    </div>
+                    <ul className="">
+                      <Typography className="mx-1 font-medium text-lg w-11/12">
+                        Senin - Jumat 08.00 - 15.30 WIB
+                      </Typography>
+                    </ul>
+                  </div>
+                  <div className="flex flex-row overflow-visible">
+                    <div className="">
+                      <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
+                    </div>
+                    <ul className="">
+                      <Typography className="mx-1 font-medium text-lg w-11/12">
+                        Sabtu, Minggu, Cuti Bersama dan Libur Nasional Tutup
+                      </Typography>
+                    </ul>
+                  </div>
+                  <div className="flex flex-row overflow-visible">
+                    <div className="">
+                      <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
+                    </div>
+                    <ul className="">
+                      <Typography className="mx-1 font-medium text-lg w-11/12">
+                        Maksimal pengunjung 1000 Perhari
+                      </Typography>
+                    </ul>
+                  </div>
                 </div>
-                <ul className="">
-                  <Typography className="mx-1 font-medium text-lg w-11/12">
-                    Senin - Jumat 08.00 - 15.30 WIB
-                  </Typography>
-                </ul>
-              </div>
-              <div className="flex flex-row overflow-visible">
-                <div className="">
-                  <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
+                <p>Follow Us</p>
+                <div className="flex justify-around mb-2">
+                  <img src={Facebook} alt="Facebook" className="h-8"/>
+                  <img src={Twitter} alt="Twitter" className="h-8" />
+                  <img src={Youtube} alt="Youtube" className="h-8 mt-1" />
+                  <img src={Instagram} alt="Instagram" className="h-8" />
+                  <img src={Spotify} alt="spotify" className="h-8" />
                 </div>
-                <ul className="">
-                  <Typography className="mx-1 font-medium text-lg w-11/12">
-                    Sabtu, Minggu, Cuti Bersama dan Libur Nasional Tutup
-                  </Typography>
-                </ul>
-              </div>
-              <div className="flex flex-row overflow-visible">
-                <div className="">
-                  <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
-                </div>
-                <ul className="">
-                  <Typography className="mx-1 font-medium text-lg w-11/12">
-                    Maksimal pengunjung 1000 Perhari
-                  </Typography>
-                </ul>
-              </div>
-            </div>
-            <p>Follow Us</p>
-            <div className="flex flex-row mb-2">
-              <img src={Facebook} alt="Facebook" className="h-12" />
-              <img src={Twitter} alt="Twitter" className="h-12" />
-              <img src={Youtube} alt="Youtube" className="h-12" />
-              <img src={Instagram} alt="Instagram" className="h-12" />
-              <img src={Spotify} alt="spotify" className="h-12" />
             </div>
           </div>
           {/* Links */}
-          <div className="w-full">
+          <div className="w-1/3 mx-2">
             <Typography className="mb-4 text-2xl font-bold uppercase border-b-4 border-creamPrimary text-creamPrimary w-1/2">
               Links
             </Typography>
             {FooterLinks.map((content, index) => (
               <div className="mb-2" key={index}>
                 <div className="grid-cols-7 overflow-visible lg:grid">
-                  <div className="grid place-items-center">
+                  <div className="grid place-items-start">
                     <ChevronDoubleRightIcon className="text-creamSecondary h-8" />
                   </div>
                   <ul className="col-span-4 w-full  gap-1">
@@ -134,7 +136,7 @@ export default function HomeFooter() {
             ))}
           </div>
           {/* Kontak */}
-          <div className="w-full">
+          <div className="w-1/3">
             <Typography className="mb-4 text-2xl font-bold uppercase border-b-4 border-creamPrimary text-creamPrimary w-1/2">
               Kontak
             </Typography>
