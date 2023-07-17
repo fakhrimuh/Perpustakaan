@@ -67,52 +67,52 @@ const FooterLinks = [
 
 export default function HomeFooter() {
   return (
-    <footer className="relative w-full bg-redPrimary">
+    <footer className="relative overflow-hidden w-full bg-redPrimary">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="flex justify-between py-5">
           <div className="w-1/3">
-          <div className="bg-creamSecondary text-redPrimary w-3/4 p-2">
+            <div className="bg-creamSecondary text-redPrimary w-3/4 p-2">
               <img src={Logo} alt="logo" className="h-36" />
-                <div>
-                  <div className="flex flex-row overflow-visible">
-                    <div className="">
-                      <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
-                    </div>
-                    <ul className="">
-                      <Typography className="mx-1 font-medium text-lg w-11/12">
-                        Senin - Jumat 08.00 - 15.30 WIB
-                      </Typography>
-                    </ul>
+              <div>
+                <div className="flex flex-row overflow-visible">
+                  <div className="">
+                    <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
                   </div>
-                  <div className="flex flex-row overflow-visible">
-                    <div className="">
-                      <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
-                    </div>
-                    <ul className="">
-                      <Typography className="mx-1 font-medium text-lg w-11/12">
-                        Sabtu, Minggu, Cuti Bersama dan Libur Nasional Tutup
-                      </Typography>
-                    </ul>
-                  </div>
-                  <div className="flex flex-row overflow-visible">
-                    <div className="">
-                      <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
-                    </div>
-                    <ul className="">
-                      <Typography className="mx-1 font-medium text-lg w-11/12">
-                        Maksimal pengunjung 1000 Perhari
-                      </Typography>
-                    </ul>
-                  </div>
+                  <ul className="">
+                    <Typography className="mx-1 font-medium text-lg w-11/12">
+                      Senin - Jumat 08.00 - 15.30 WIB
+                    </Typography>
+                  </ul>
                 </div>
-                <p>Follow Us</p>
-                <div className="flex justify-around mb-2">
-                  <img src={Facebook} alt="Facebook" className="h-8"/>
-                  <img src={Twitter} alt="Twitter" className="h-8" />
-                  <img src={Youtube} alt="Youtube" className="h-8 mt-1" />
-                  <img src={Instagram} alt="Instagram" className="h-8" />
-                  <img src={Spotify} alt="spotify" className="h-8" />
+                <div className="flex flex-row overflow-visible">
+                  <div className="">
+                    <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
+                  </div>
+                  <ul className="">
+                    <Typography className="mx-1 font-medium text-lg w-11/12">
+                      Sabtu, Minggu, Cuti Bersama dan Libur Nasional Tutup
+                    </Typography>
+                  </ul>
                 </div>
+                <div className="flex flex-row overflow-visible">
+                  <div className="">
+                    <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
+                  </div>
+                  <ul className="">
+                    <Typography className="mx-1 font-medium text-lg w-11/12">
+                      Maksimal pengunjung 1000 Perhari
+                    </Typography>
+                  </ul>
+                </div>
+              </div>
+              <p>Follow Us</p>
+              <div className="flex justify-around mb-2">
+                <img src={Facebook} alt="Facebook" className="h-8" />
+                <img src={Twitter} alt="Twitter" className="h-8" />
+                <img src={Youtube} alt="Youtube" className="h-8 mt-1" />
+                <img src={Instagram} alt="Instagram" className="h-8" />
+                <img src={Spotify} alt="spotify" className="h-8" />
+              </div>
             </div>
           </div>
           {/* Links */}
