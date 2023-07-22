@@ -12,7 +12,7 @@ import DigitalRepositary from "./Pages/DigitalRepoPage";
 
 function App() {
   return (
-    <div className="bg-creamSecondary">
+    <div className="bg-creamSecondary font-sans">
       <HeaderNavbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
