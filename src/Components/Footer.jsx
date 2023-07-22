@@ -1,67 +1,67 @@
-import { Typography } from '@material-tailwind/react';
-import Location from '../Asset/Icon/Location.png';
-import Whatsapp from '../Asset/Icon/Whatsapp.png';
-import Email from '../Asset/Icon/Email.png';
-import Phone from '../Asset/Icon/Phone.png';
-import { ChevronDoubleRightIcon } from '@heroicons/react/24/solid';
-import Logo from '../Asset/LogoPerpus.png';
-import Facebook from '../Asset/Icon/Facebook.png';
-import Twitter from '../Asset/Icon/Twitter.png';
-import Youtube from '../Asset/Icon/Youtube.png';
-import Instagram from '../Asset/Icon/Instagram.png';
-import Spotify from '../Asset/Icon/Spotify.png';
+import { Typography } from "@material-tailwind/react";
+import Location from "../Asset/Icon/Location.png";
+import Whatsapp from "../Asset/Icon/Whatsapp.png";
+import Email from "../Asset/Icon/Email.png";
+import Phone from "../Asset/Icon/Phone.png";
+import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
+import Logo from "../Asset/LogoPerpus.png";
+import Facebook from "../Asset/Icon/Facebook.png";
+import Twitter from "../Asset/Icon/Twitter.png";
+import Youtube from "../Asset/Icon/Youtube.png";
+import Instagram from "../Asset/Icon/Instagram.png";
+import Spotify from "../Asset/Icon/Spotify.png";
 
 const FooterContact = [
   {
-    title: 'Telepon',
+    title: "Telepon",
     Icon: Phone,
-    description: '(022) 2019487',
+    description: "(022) 2019487",
   },
   {
-    title: 'Whatsapp',
+    title: "Whatsapp",
     Icon: Whatsapp,
-    description: '0859-5999-9300',
+    description: "0859-5999-9300",
   },
   {
-    title: 'Email',
+    title: "Email",
     Icon: Email,
-    description: 'perpustakaan@upi.edu',
+    description: "perpustakaan@upi.edu",
   },
   {
-    title: 'Alamat',
+    title: "Alamat",
     Icon: Location,
-    description: 'Jl.Dr. Setiabudhi No.229 Bandung - Jawa Barat Indonesia',
+    description: "Jl.Dr. Setiabudhi No.229 Bandung - Jawa Barat Indonesia",
   },
 ];
 
 const FooterLinks = [
   {
-    title: 'Katalog Online',
-    links: '',
+    title: "Katalog Online",
+    links: "",
   },
   {
-    title: 'Cek Pinjam Online',
-    links: '',
+    title: "Cek Pinjam Online",
+    links: "",
   },
   {
-    title: 'Repository',
-    links: '',
+    title: "Repository",
+    links: "",
   },
   {
-    title: 'Digital Library',
-    links: '',
+    title: "Digital Library",
+    links: "",
   },
   {
-    title: 'A-Research',
-    links: '',
+    title: "A-Research",
+    links: "",
   },
   {
-    title: 'E-Journal & E-Book',
-    links: '',
+    title: "E-Journal & E-Book",
+    links: "",
   },
   {
-    title: 'Daftar Jurnal Tercetak',
-    links: '',
+    title: "Daftar Jurnal Tercetak",
+    links: "",
   },
 ];
 
@@ -79,7 +79,9 @@ export default function HomeFooter() {
                     <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
                   </div>
                   <ul className="">
-                    <Typography className="mx-1 font-medium text-lg w-11/12">Senin - Jumat 08.00 - 15.30 WIB</Typography>
+                    <Typography className="mx-1 font-medium text-lg w-11/12">
+                      Senin - Jumat 08.00 - 15.30 WIB
+                    </Typography>
                   </ul>
                 </div>
                 <div className="flex flex-row overflow-visible">
@@ -87,7 +89,9 @@ export default function HomeFooter() {
                     <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
                   </div>
                   <ul className="">
-                    <Typography className="mx-1 font-medium text-lg w-11/12">Sabtu, Minggu, Cuti Bersama dan Libur Nasional Tutup</Typography>
+                    <Typography className="mx-1 font-medium text-lg w-11/12">
+                      Sabtu, Minggu, Cuti Bersama dan Libur Nasional Tutup
+                    </Typography>
                   </ul>
                 </div>
                 <div className="flex flex-row overflow-visible">
@@ -95,12 +99,14 @@ export default function HomeFooter() {
                     <ChevronDoubleRightIcon className="h-7 text-redPrimary" />
                   </div>
                   <ul className="">
-                    <Typography className="mx-1 font-medium text-lg w-11/12">Maksimal pengunjung 1000 Perhari</Typography>
+                    <Typography className="mx-1 font-medium text-lg w-11/12">
+                      Maksimal pengunjung 1000 Perhari
+                    </Typography>
                   </ul>
                 </div>
               </div>
 
-              <p className="text-center font-medium mb-2">Follow Us</p>
+              <p className="text-center font-semibold my-2">Follow Us</p>
               <div className="flex justify-around mb-2">
                 <a href="https://www.facebook.com/UPICentralLibrary/">
                   <img src={Facebook} alt="Facebook" className="h-8" />
@@ -122,7 +128,9 @@ export default function HomeFooter() {
           </div>
           {/* Links */}
           <div className="w-1/3 mx-2">
-            <Typography className="mb-4 text-2xl font-bold uppercase border-b-4 border-creamPrimary text-creamPrimary w-1/2">Links</Typography>
+            <Typography className="mb-4 text-2xl font-bold uppercase border-b-4 border-creamPrimary text-creamPrimary w-1/2">
+              Links
+            </Typography>
             {FooterLinks.map((content, index) => (
               <div className="mb-2" key={index}>
                 <div className="grid-cols-7 overflow-visible lg:grid">
@@ -130,7 +138,9 @@ export default function HomeFooter() {
                     <ChevronDoubleRightIcon className="text-creamSecondary h-8" />
                   </div>
                   <ul className="col-span-4 w-full  gap-1">
-                    <Typography className="text-lg text-creamSecondary">{content.title}</Typography>
+                    <Typography className="text-lg text-creamSecondary">
+                      {content.title}
+                    </Typography>
                   </ul>
                 </div>
               </div>
@@ -138,7 +148,9 @@ export default function HomeFooter() {
           </div>
           {/* Kontak */}
           <div className="w-1/3">
-            <Typography className="mb-4 text-2xl font-bold uppercase border-b-4 border-creamPrimary text-creamPrimary w-1/2">Kontak</Typography>
+            <Typography className="mb-4 text-2xl font-bold uppercase border-b-4 border-creamPrimary text-creamPrimary w-1/2">
+              Kontak
+            </Typography>
             {/* Logo with description */}
             {FooterContact.map((content, index) => (
               <div className="mb-2" key={index}>
@@ -148,8 +160,12 @@ export default function HomeFooter() {
                   </div>
                   <ul className="col-span-4 flex w-full flex-col gap-1">
                     <div>
-                      <Typography className="mb-1 text-creamSecondary font-bold text-xl">{content.title}</Typography>
-                      <Typography className="text-creamSecondary font-medium text-base text-justify w-3/4">{content.description}</Typography>
+                      <Typography className="mb-1 text-creamSecondary font-bold text-xl">
+                        {content.title}
+                      </Typography>
+                      <Typography className="text-creamSecondary font-medium text-base text-justify w-3/4">
+                        {content.description}
+                      </Typography>
                     </div>
                   </ul>
                 </div>
