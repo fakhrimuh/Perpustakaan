@@ -78,7 +78,7 @@ export default function HomePage() {
                 alternatif="Jurnal Tercetak"
               />
             </a>
-            <Link to="/">
+            <Link to="/LayananMandiri">
               <CardIcon
                 title="Layanan Mandiri"
                 img1={AHLM}
