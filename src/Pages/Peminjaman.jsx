@@ -28,7 +28,7 @@ export default function PeminjamanPage() {
       <Card className="my-6 mx-auto w-1/2 bg-redPrimary">
         <div className="text-center text-creamSecondary mb-4">
           <h1 className="font-bold ">Cek Peminjaman Buku</h1>
-          <p className="mx-auto  font-medium">
+          <p className="mx-auto font-medium">
             Selamat datang di halaman Cek Peminjaman Buku! Di sini Anda dapat
             memeriksa status peminjaman buku Anda dengan mudah.
           </p>

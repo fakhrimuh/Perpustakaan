@@ -67,7 +67,7 @@ const FooterLinks = [
 
 export default function HomeFooter() {
   return (
-    <footer className="relative overflow-hidden w-full bg-redPrimary">
+    <footer className="relative w-full bg-redPrimary overflow-hidden">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="flex justify-between py-5">
           <div className="w-1/3">
@@ -105,13 +105,24 @@ export default function HomeFooter() {
                   </ul>
                 </div>
               </div>
-              <p>Follow Us</p>
+
+              <p className="text-center font-semibold my-2">Follow Us</p>
               <div className="flex justify-around mb-2">
-                <img src={Facebook} alt="Facebook" className="h-8" />
-                <img src={Twitter} alt="Twitter" className="h-8" />
-                <img src={Youtube} alt="Youtube" className="h-8 mt-1" />
-                <img src={Instagram} alt="Instagram" className="h-8" />
-                <img src={Spotify} alt="spotify" className="h-8" />
+                <a href="https://www.facebook.com/UPICentralLibrary/">
+                  <img src={Facebook} alt="Facebook" className="h-8" />
+                </a>
+                <a href="https://twitter.com/perpustakaanupi">
+                  <img src={Twitter} alt="Twitter" className="h-8" />
+                </a>
+                <a href="https://www.youtube.com/upicentrallibrary">
+                  <img src={Youtube} alt="Youtube" className="h-8 mt-1" />
+                </a>
+                <a href="https://instagram.com/perpustakaan_upi">
+                  <img src={Instagram} alt="Instagram" className="h-8" />
+                </a>
+                <a href="https://podcasters.spotify.com/pod/show/perpustakaan-upi">
+                  <img src={Spotify} alt="spotify" className="h-8" />
+                </a>
               </div>
             </div>
           </div>

@@ -42,25 +42,30 @@ export default function HomePage() {
             Layanan Kami
           </p>
           <div className="text-center mx-4 content-center grid xl:grid-cols-3 grid-rows-3 md:grid-cols-2">
-            <CardIcon
-              title="Katalog Online"
-              img1={AHKO}
-              img2={BHKO}
-              alternatif="Katalog Online"
-            />
-
-            <CardIcon
-              title="E-Journal & E-Book"
-              img1={AHEJ}
-              img2={BHEJ}
-              alternatif="E-Journal & E-Book"
-            />
-            <CardIcon
-              title="Digital Repository"
-              img1={AHDR}
-              img2={BHDR}
-              alternatif="Digital Repository"
-            />
+            <Link to="/Opac">
+              <CardIcon
+                title="Katalog Online"
+                img1={AHKO}
+                img2={BHKO}
+                alternatif="Katalog Online"
+              />
+            </Link>
+            <Link to="/E-Journal">
+              <CardIcon
+                title="E-Journal & E-Book"
+                img1={AHEJ}
+                img2={BHEJ}
+                alternatif="E-Journal & E-Book"
+              />
+            </Link>
+            <Link to="/DigitalRepository">
+              <CardIcon
+                title="Digital Repository"
+                img1={AHDR}
+                img2={BHDR}
+                alternatif="Digital Repository"
+              />
+            </Link>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -73,24 +78,30 @@ export default function HomePage() {
                 alternatif="Jurnal Tercetak"
               />
             </a>
-            <CardIcon
-              title="Layanan Mandiri"
-              img1={AHLM}
-              img2={BHLM}
-              alternatif="Layanan Mandiri"
-            />
-            <CardIcon
-              title="Kelas Literasi"
-              img1={AHKL}
-              img2={BHKL}
-              alternatif="Kelas Literasi"
-            />
-            <CardIcon
-              title="koleksi Upiana"
-              img1={AHKU}
-              img2={BHKU}
-              alternatif="Koleksi Upiana"
-            />
+            <Link to="/LayananMandiri">
+              <CardIcon
+                title="Layanan Mandiri"
+                img1={AHLM}
+                img2={BHLM}
+                alternatif="Layanan Mandiri"
+              />
+            </Link>
+            <Link to="/Kalista">
+              <CardIcon
+                title="Kelas Literasi"
+                img1={AHKL}
+                img2={BHKL}
+                alternatif="Kelas Literasi"
+              />
+            </Link>
+            <Link to="/Upiana">
+              <CardIcon
+                title="koleksi Upiana"
+                img1={AHKU}
+                img2={BHKU}
+                alternatif="Koleksi Upiana"
+              />
+            </Link>
             <a
               target="_blank"
               rel="noopener noreferrer"

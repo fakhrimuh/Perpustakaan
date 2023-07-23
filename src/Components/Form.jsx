@@ -26,8 +26,8 @@ export default function BookForm() {
           <CardBody className="bg-creamSecondary rounded-xl">
             <div className="mb-4 flex flex-col gap-6">
               <Input size="lg" label="Nama Lengkap" required />
-              <Input size="lg" label="NIM" />
-              <Select label="Pilih Fakultas">
+              <Input size="lg" label="NIM" required />
+              <Select label="Pilih Fakultas " required>
                 <Option>FIP</Option>
                 <Option>FPMIPA</Option>
                 <Option>FPIPS</Option>
@@ -43,13 +43,13 @@ export default function BookForm() {
                 <Option>KD PURWAKARTA</Option>
                 <Option>KD SERANG</Option>
               </Select>
-              <Input type="lg" size="lg" label="Email" />
-              <Input type="lg" size="lg" label="No HP/Whatsapp" />
-              <Input type="lg" size="lg" label="Judul" />
-              <Input type="lg" size="lg" label="Pengarang" />
-              <Input type="lg" size="lg" label="Penerbit" />
-              <Input type="lg" size="lg" label="Harga Buku" />
-              <Input type="lg" size="lg" label="Catatan/Pesan" />
+              <Input type="lg" size="lg" label="Email" required />
+              <Input type="lg" size="lg" label="No HP/Whatsapp" required />
+              <Input type="lg" size="lg" label="Judul" required />
+              <Input type="lg" size="lg" label="Pengarang" required />
+              <Input type="lg" size="lg" label="Penerbit" required />
+              <Input type="lg" size="lg" label="Harga Buku" required />
+              <Input type="lg" size="lg" label="Catatan/Pesan" required />
             </div>
           </CardBody>
 
