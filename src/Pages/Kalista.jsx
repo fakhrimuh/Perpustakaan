@@ -44,7 +44,6 @@ export default function Kalista() {
               </div>
             </section>
 
-
             <section>
               <div >
                 <div >
@@ -209,7 +208,7 @@ export default function Kalista() {
                 <iframe className="mx-auto rounded-lg" width="1280" height="720" src="https://www.youtube.com/embed/YI4f3oOTZYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
               </div>
-              <div class="flex gap-2">
+              <div class="flex gap-4">
                 {/* Booklet perpus ID */}
                 <Card className="w-1/4 border-b-8 border-b-redPrimary">
                   <CardBody>
@@ -312,127 +311,29 @@ export default function Kalista() {
                 <h2 className="text-5xl font-bold text-center mb-4">Repository UPI dan Optimasi Tools untuk Akses Online​</h2>
                 <p className="w-1/2 text-center mx-auto">Topik pembahasan meliputi jenis dan cara mengakses koleksi yang ada pada Repository UPI serta perangkat lunak yang digunakan untuk dapat mengakses semua layanan koleksi Perpustakaan UPI secara online</p>
               </div>
+              <div className="imageGroup mx-auto">
+                <div>
+                  <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN.png" className="attachment-full size-full wp-image-3204" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />
+                </div>
+                <h2 className="text-xl font-bold mb-2">Panduan VPN &amp; MyLOFT</h2>
+                <div className="grid gap-4 grid-cols-2">
+                  <div>
+                    <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows.png" class="attachment-full size-full wp-image-3022" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />
+                  </div>
+                  <div>
+                    <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS.png" className="attachment-full size-full wp-image-3023" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />
+                  </div>
+                  <div>
+                    <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android.png" class="attachment-full size-full wp-image-3027" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />
+                  </div>
+                  <div>
+                    <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT.png" className="attachment-full size-full wp-image-3028" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />
+                  </div>
+                </div>
+
+              </div>
             </section>
 
-            <section class="elementor-section elementor-top-section elementor-element elementor-element-2c5fdc5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2c5fdc5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-              <div>
-                <div>
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e6cbbc9" data-id="e6cbbc9" data-element_type="column">
-                    <div>
-                      <div >
-                        <div class="elementor-element elementor-element-288ae0d elementor-widget elementor-widget-video" data-id="288ae0d" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=i4y4IQ3sCMQ&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;http:\/\/perpustakaan.upi.edu\/wp-content\/uploads\/2021\/02\/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN.png&quot;,&quot;id&quot;:3204,&quot;size&quot;:&quot;&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-                          <div >
-                            <div class="elementor-wrapper elementor-open-lightbox">
-                              <div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes" data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/i4y4IQ3sCMQ?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-288ae0d&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL2k0eTRJUTNzQ01RP2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtMjg4YWUwZCIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
-                                <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN.png" class="attachment-full size-full wp-image-3204" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/Tutorial-Daring-Repository-UPI-dan-Optimalisasi-VPN-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video" tabindex="0">
-                                  <i aria-hidden="true" class="eicon-play"></i>							<span class="elementor-screen-only">Play Video</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="elementor-section elementor-top-section elementor-element elementor-element-c0d1511 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c0d1511" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-              <div >
-                <div>
-                  <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-600989e" data-id="600989e" data-element_type="column">
-                    <div>
-                      <div >
-                        <div class="elementor-element elementor-element-837f2b7 elementor-widget elementor-widget-heading" data-id="837f2b7" data-element_type="widget" data-widget_type="heading.default">
-                          <div >
-                            <h2 class="elementor-heading-title elementor-size-xl">Panduan VPN &amp; MyLOFT</h2>		</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="elementor-section elementor-top-section elementor-element elementor-element-6669448 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6669448" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-              <div >
-                <div>
-                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-96e7f9c" data-id="96e7f9c" data-element_type="column">
-                    <div>
-                      <div >
-                        <div class="elementor-element elementor-element-7ca8d6e elementor-widget elementor-widget-video" data-id="7ca8d6e" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=hGSe2dbzfh4&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;http:\/\/perpustakaan.upi.edu\/wp-content\/uploads\/2021\/02\/VPN-Windows.png&quot;,&quot;id&quot;:3022,&quot;size&quot;:&quot;&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-                          <div >
-                            <div class="elementor-wrapper elementor-open-lightbox">
-                              <div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes" data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/hGSe2dbzfh4?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-7ca8d6e&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL2hHU2UyZGJ6Zmg0P2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtN2NhOGQ2ZSIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
-                                <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows.png" class="attachment-full size-full wp-image-3022" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Windows-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video" tabindex="0">
-                                  <i aria-hidden="true" class="eicon-play"></i>							<span class="elementor-screen-only">Play Video</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fac6078" data-id="fac6078" data-element_type="column">
-                    <div>
-                      <div >
-                        <div class="elementor-element elementor-element-05ced86 elementor-widget elementor-widget-video" data-id="05ced86" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=Z0vqXjCySPI&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;http:\/\/perpustakaan.upi.edu\/wp-content\/uploads\/2021\/02\/VPN-MacOS.png&quot;,&quot;id&quot;:3023,&quot;size&quot;:&quot;&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-                          <div >
-                            <div class="elementor-wrapper elementor-open-lightbox">
-                              <div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes" data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/Z0vqXjCySPI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-05ced86&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1owdnFYakN5U1BJP2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtMDVjZWQ4NiIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
-                                <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS.png" class="attachment-full size-full wp-image-3023" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-MacOS-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video" tabindex="0">
-                                  <i aria-hidden="true" class="eicon-play"></i>							<span class="elementor-screen-only">Play Video</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="elementor-section elementor-top-section elementor-element elementor-element-25f96ea elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="25f96ea" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-              <div >
-                <div>
-                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8041dfc" data-id="8041dfc" data-element_type="column">
-                    <div>
-                      <div >
-                        <div class="elementor-element elementor-element-48a207d elementor-widget elementor-widget-video" data-id="48a207d" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=XOUDGQk1y0E&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;http:\/\/perpustakaan.upi.edu\/wp-content\/uploads\/2021\/02\/VPN-Android.png&quot;,&quot;id&quot;:3027,&quot;size&quot;:&quot;&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-                          <div >
-                            <div class="elementor-wrapper elementor-open-lightbox">
-                              <div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes" data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/XOUDGQk1y0E?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-48a207d&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1hPVURHUWsxeTBFP2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtNDhhMjA3ZCIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
-                                <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android.png" class="attachment-full size-full wp-image-3027" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/VPN-Android-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video" tabindex="0">
-                                  <i aria-hidden="true" class="eicon-play"></i>							<span class="elementor-screen-only">Play Video</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5e47492" data-id="5e47492" data-element_type="column">
-                    <div>
-                      <div >
-                        <div class="elementor-element elementor-element-880e193 elementor-widget elementor-widget-video" data-id="880e193" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=OnuJUFLcakI&quot;,&quot;show_image_overlay&quot;:&quot;yes&quot;,&quot;image_overlay&quot;:{&quot;url&quot;:&quot;http:\/\/perpustakaan.upi.edu\/wp-content\/uploads\/2021\/02\/MyLOFT.png&quot;,&quot;id&quot;:3028,&quot;size&quot;:&quot;&quot;},&quot;lightbox&quot;:&quot;yes&quot;,&quot;lazy_load&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}" data-widget_type="video.default">
-                          <div >
-                            <div class="elementor-wrapper elementor-open-lightbox">
-                              <div class="elementor-custom-embed-image-overlay" data-elementor-open-lightbox="yes" data-elementor-lightbox="{&quot;type&quot;:&quot;video&quot;,&quot;videoType&quot;:&quot;youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/embed\/OnuJUFLcakI?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0&quot;,&quot;modalOptions&quot;:{&quot;id&quot;:&quot;elementor-lightbox-880e193&quot;,&quot;entranceAnimation&quot;:&quot;&quot;,&quot;entranceAnimation_tablet&quot;:&quot;&quot;,&quot;entranceAnimation_mobile&quot;:&quot;&quot;,&quot;videoAspectRatio&quot;:&quot;169&quot;}}" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL09udUpVRkxjYWtJP2ZlYXR1cmU9b2VtYmVkJnN0YXJ0JmVuZCZ3bW9kZT1vcGFxdWUmbG9vcD0wJmNvbnRyb2xzPTEmbXV0ZT0wJnJlbD0wJm1vZGVzdGJyYW5kaW5nPTAiLCJtb2RhbE9wdGlvbnMiOnsiaWQiOiJlbGVtZW50b3ItbGlnaHRib3gtODgwZTE5MyIsImVudHJhbmNlQW5pbWF0aW9uIjoiIiwiZW50cmFuY2VBbmltYXRpb25fdGFibGV0IjoiIiwiZW50cmFuY2VBbmltYXRpb25fbW9iaWxlIjoiIiwidmlkZW9Bc3BlY3RSYXRpbyI6IjE2OSJ9fQ%3D%3D">
-                                <img decoding="async" width="1280" height="720" src="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT.png" class="attachment-full size-full wp-image-3028" alt="" loading="lazy" srcset="http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT.png 1280w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT-300x169.png 300w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT-1024x576.png 1024w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT-768x432.png 768w, http://perpustakaan.upi.edu/wp-content/uploads/2021/02/MyLOFT-610x343.png 610w" sizes="(max-width: 1280px) 100vw, 1280px" />																<div class="elementor-custom-embed-play" role="button" aria-label="Play Video" tabindex="0">
-                                  <i aria-hidden="true" class="eicon-play"></i>							<span class="elementor-screen-only">Play Video</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
             <section class="elementor-section elementor-top-section elementor-element elementor-element-dfa34a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dfa34a2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
               <div >
                 <div>
