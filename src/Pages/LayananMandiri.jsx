@@ -1,4 +1,9 @@
 import { Link } from "react-router-dom";
+import Row1 from "../Asset/Layanan Mandiri/1.jpg"
+import Row2 from "../Asset/Layanan Mandiri/2.jpg"
+import Row3 from "../Asset/Layanan Mandiri/3.jpg"
+import Row4 from "../Asset/Layanan Mandiri/4.jpg"
+
 export default function LayananMandiri() {
   return (
     <div className="w-5/6 bg-white rounded-lg my-4 mx-auto">
@@ -20,7 +25,7 @@ export default function LayananMandiri() {
           <div>
             <img
               className="mx-auto"
-              src="http://perpustakaan.upi.edu/wp-content/uploads/2022/09/transaksi-sirkulasi-mandiri-01-1024x421.jpg"
+              src={Row1}
               alt="tutorial-row-1"
               width="1024"
               height="421"
@@ -31,7 +36,7 @@ export default function LayananMandiri() {
           <p>
             <img
               className="mx-auto"
-              src="http://perpustakaan.upi.edu/wp-content/uploads/2022/09/transaksi-sirkulasi-mandiri-02-1024x557.jpg"
+              src={Row2}
               alt=""
               width="1024"
               height="557"
@@ -45,7 +50,7 @@ export default function LayananMandiri() {
           <p>
             <img
               className="mx-auto"
-              src="http://perpustakaan.upi.edu/wp-content/uploads/2018/10/transaksi-gagal.jpg"
+              src={Row3}
               alt=""
               width="494"
               height="619"
@@ -72,7 +77,7 @@ export default function LayananMandiri() {
           <p>
             <img
               className="mx-auto"
-              src="http://perpustakaan.upi.edu/wp-content/uploads/2020/03/tutorial-bookdrop.jpg"
+              src={Row4}
               alt=""
               width="559"
               height="618"
