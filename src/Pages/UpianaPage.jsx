@@ -6,65 +6,98 @@ import {
   Typography,
   Button,
   CardBody,
-  Chip,
   CardFooter,
-  Avatar
 } from "@material-tailwind/react";
-
-
+import React, { useState } from 'react';
 
 const TABLE_HEAD = ["Nomor Panggil", "Penulis", "judul", "Anak Judul", "Topik 1", "Topik 2", "Topik 3"];
 
 const TABLE_ROWS = [
   {
-    img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-3.jpg",
-    name: "John Michael",
-    email: "john@creative-tim.com",
-    job: "Manager",
-    org: "Organization",
-    online: true,
-    date: "23/04/18",
+    nomorPanggil: "UPI 375 AAN p",
+    penulis: "Aan Listiana",
+    judul: "Panduan Praktis dalam Mengembangkan Sikap Disiplin dan Mandiri Anak melalui TPM-KURTILAS",
+    anakJudul: "pendidikan cuy",
+    topik1: "pendidikan dasar",
+    topik2: " ",
+    topik3: " ",
   },
   {
-    img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-2.jpg",
-    name: "Alexa Liras",
-    email: "alexa@creative-tim.com",
-    job: "Programator",
-    org: "Developer",
-    online: false,
-    date: "23/04/18",
+    nomorPanggil: "UPI 899. 221 030 83 ABB a",
+    penulis: "Abbas, Ersis Warmansyah",
+    judul: "Asap",
+    anakJudul: " ",
+    topik1: "Fiksi Indonesia",
+    topik2: "Novel Realistis ",
+    topik3: "Novel Ramantis ",
   },
   {
-    img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-1.jpg",
-    name: "Laurent Perrier",
-    email: "laurent@creative-tim.com",
-    job: "Executive",
-    org: "Projects",
-    online: false,
-    date: "19/09/17",
+    nomorPanggil: "UPI 371.33 ABD t",
+    penulis: "Abdulhak, Ishak",
+    judul: "Teknologi Pendidikan",
+    anakJudul: " ",
+    topik1: "Pendidikan Teknologi",
+    topik2: "Paradigma Pendidikan ",
+    topik3: "Educational Technology ",
   },
   {
-    img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-4.jpg",
-    name: "Michael Levi",
-    email: "michael@creative-tim.com",
-    job: "Programator",
-    org: "Developer",
-    online: true,
-    date: "24/12/08",
+    nomorPanggil: "UPI 374 ACH p",
+    penulis: "Achmad Hufad",
+    judul: "Pemberdayaan Masyarakat",
+    anakJudul: "konsep dan refleksi praksis pendidikan masyarakat",
+    topik1: "Pendidikan Luar Sekolah",
+    topik2: "Pendidikan orang dewasa",
+    topik3: "Adult Education",
   },
   {
-    img: "https://demos.creative-tim.com/test/corporate-ui-dashboard/assets/img/team-5.jpg",
-    name: "Richard Gran",
-    email: "richard@creative-tim.com",
-    job: "Manager",
-    org: "Executive",
-    online: false,
-    date: "04/10/21",
+    nomorPanggil: "UPI 332.0685 ALM m",
+    penulis: "Alma, Buchari",
+    judul: "manajemen Kredit Mikro",
+    anakJudul: "Melalui BMT(Baitulmal Wat Tamwil) Di Lingkungan Mesjid",
+    topik1: "Ekonomi Finansial",
+    topik2: "Credit Management",
+    topik3: " ",
+  },
+  {
+    nomorPanggil: "UPI 410 ALW d.",
+    penulis: "Alwasilah, A. Chaedar",
+    judul: "Dari Cicalengka sampai Chicago",
+    anakJudul: "bunga rampai pendidikan bahasa",
+    topik1: "Linguistik",
+    topik2: "Bahasa Indonesia",
+    topik3: " ",
   },
 ];
 
 
+
 export default function Upiana() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const pageSize = 5; // Jumlah item per halaman
+
+  // Fungsi pencarian
+  const filteredData = TABLE_ROWS.filter((item) =>
+    item.judul.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const indexOfLastItem = currentPage * pageSize;
+  const indexOfFirstItem = indexOfLastItem - pageSize;
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+
+  const nextPage = () => {
+    if (currentPage < Math.ceil(filteredData.length / pageSize)) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
   return (
     <div className="container mx-auto">
       <div className="my-4 text-center">
@@ -80,10 +113,15 @@ export default function Upiana() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 
             <div className="w-full md:w-72">
-              <Input label="Search" icon={<MagnifyingGlassIcon className="h-5 w-5" />} />
+              <Input label="Search" icon={<MagnifyingGlassIcon className="h-5 w-5" />}
+                type="text"
+                placeholder="Cari..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)} />
             </div>
           </div>
         </CardHeader>
+
         <CardBody className=" px-0">
           <table className="bg-creamPrimary border-redPrimary w-3/4 mx-auto min-w-max table-auto text-left rounded-lg">
             <thead>
@@ -104,73 +142,69 @@ export default function Upiana() {
               </tr>
             </thead>
             <tbody className="overflow-hidden">
-              {TABLE_ROWS.map(({ img, name, email, job, org, online, date }, index) => {
+              {currentItems.map((result, index) => {
                 const isLast = index === TABLE_ROWS.length - 1;
                 const classes = isLast ? "p-4" : "p-4 border-b border-blue-gray-50";
-
                 return (
-                  <tr key={name} className="even:bg-creamSecondary">
-                    <td className={classes}>
-                      <div className="flex items-center gap-3">
-                        <Avatar src={img} alt={name} size="sm" />
-                        <div className="flex flex-col">
-                          <Typography variant="small" color="blue-gray" className="font-normal">
-                            {name}
-                          </Typography>
-                          <Typography
-                            variant="small"
-                            color="blue-gray"
-                            className="font-normal opacity-70"
-                          >
-                            {email}
-                          </Typography>
-                        </div>
-                      </div>
-                    </td>
-                    <td className={classes}>
-                      <div className="flex flex-col">
-                        <Typography variant="small" color="blue-gray" className="font-normal">
-                          {job}
-                        </Typography>
-                        <Typography
-                          variant="small"
-                          color="blue-gray"
-                          className="font-normal opacity-70"
-                        >
-                          {org}
-                        </Typography>
-                      </div>
-                    </td>
-                    <td className={classes}>
-                      <div className="w-max">
-                        <Chip
-                          variant="ghost"
-                          size="sm"
-                          value={online ? "online" : "offline"}
-                          color={online ? "green" : "blue-gray"}
-                        />
-                      </div>
-                    </td>
-                    <td className={classes}>
-                      <Typography variant="small" color="blue-gray" className="font-normal">
-                        {date}
+                  <tr key={result.nomorPanggil} className="even:bg-creamSecondary">
+                    <td className={`${classes} w-28`}>
+                      <Typography variant="small"
+                        color="blue-gray"
+                        className="font-normal opacity-70">
+                        {result.nomorPanggil}
                       </Typography>
                     </td>
-                    <td className={classes}>
-                      <Typography variant="small" color="blue-gray" className="font-normal">
-                        {date}
+                    <td className={`${classes} w-28`}>
+                      <Typography
+                        variant="small"
+                        color="blue-gray"
+                        className="font-normal opacity-70"
+                      >
+                        {result.penulis}
                       </Typography>
-                    </td><td className={classes}>
-                      <Typography variant="small" color="blue-gray" className="font-normal">
-                        {date}
+                    </td>
+                    <td className={`${classes} w-48`}>
+
+                      <Typography
+                        variant="small"
+                        color="blue-gray"
+                        className="font-normal opacity-70"
+                      >
+                        {result.judul}
                       </Typography>
-                    </td><td className={classes}>
+                    </td>
+
+                    <td className={`${classes} w-28`}>
+
+                      <Typography
+                        variant="small"
+                        color="blue-gray"
+                        className="font-normal opacity-70"
+                      >
+                        {result.anakJudul}
+                      </Typography>
+                    </td>
+
+                    <td className={`${classes} w-28`}>
+
                       <Typography variant="small" color="blue-gray" className="font-normal">
-                        {date}
+                        {result.topik1}
+                      </Typography>
+                    </td>
+                    <td className={`${classes} w-28`}>
+
+                      <Typography variant="small" color="blue-gray" className="font-normal">
+                        {result.topik2}
+                      </Typography>
+                    </td>
+                    <td className={`${classes} w-28`}>
+
+                      <Typography variant="small" color="blue-gray" className="font-normal">
+                        {result.topik3}
                       </Typography>
                     </td>
                   </tr>
-                );
+                )
               })}
             </tbody>
           </table>
@@ -180,10 +214,10 @@ export default function Upiana() {
             Page 1 of 10
           </Typography>
           <div className="flex gap-2">
-            <Button variant="outlined" color="blue-gray" size="sm">
+            <Button variant="outlined" size="sm" onClick={prevPage} disabled={currentPage === 1}>
               Previous
             </Button>
-            <Button variant="outlined" color="blue-gray" size="sm">
+            <Button variant="outlined" size="sm" onClick={nextPage} disabled={currentPage === Math.ceil(filteredData.length / pageSize)}>
               Next
             </Button>
           </div>
@@ -192,3 +226,4 @@ export default function Upiana() {
     </div>
   );
 }
+
