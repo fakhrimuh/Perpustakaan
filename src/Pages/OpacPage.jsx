@@ -1,5 +1,5 @@
 import { Input, Button, Card, CardBody, CardFooter, Typography } from "@material-tailwind/react";
-import { MagnifyingGlassIcon, BookOpenIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon, BookOpenIcon, ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import React, { useState } from 'react';
 
 
@@ -106,24 +106,23 @@ export default function OpacPage() {
         <div className="w-1/2 mb-2 flex items-center mx-auto">
           <Input
             type="text"
-            label="Kata Kunci"
+            placeholder="Kata Kunci"
             icon={<MagnifyingGlassIcon className="text-creamSecondary" />}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="text-creamSecondary border-creamSecondary border-2 "
+            // className="text-creamSecondary border-creamSecondary border-2 placeholder-creamSecondary "
+            className="!border !border-creamSecondary  text-creamSecondary  placeholder-creamSecondary"
+            labelProps={{
+              className: "hidden",
+            }}
           />
-          {/* <Button
-            variant="outlined"
-            className="text-center hover:text-redPrimary w-1/4 mx-2 border-creamSecondary hover:bg-creamSecondary text-creamSecondary"
-          >
-            Cari
-          </Button> */}
+
         </div>
 
         <CardBody>
           <div className="w-4/6  mx-auto">
             {currentItems.map((result, index) => {
-              const isLast = index === OpacList.length - 1;
+              const isLast = index === currentItems.length - 1;
               const classes = isLast ? "p-4" : "p-4 border-b border-creamSecondary";
               return (
                 <div className={`${classes} flex my-2`}>
@@ -171,7 +170,6 @@ export default function OpacPage() {
                       </tr>
                     </div>
                   </div>
-
                 </div>
               )
             })}
@@ -179,15 +177,19 @@ export default function OpacPage() {
         </CardBody>
 
         <CardFooter className="flex items-center justify-between border-t border-blue-gray-50 p-4">
-          <Typography variant="small" color="blue-gray" className="font-normal">
-            Page 1 of 10
+          <Typography variant="small" className="font-normal text-creamSecondary">
+            Page {currentPage} of {Math.ceil(filteredData.length / pageSize)}
           </Typography>
           <div className="flex gap-2">
-            <Button variant="outlined" size="sm" className="bg-CreamSecondary" onClick={prevPage} disabled={currentPage === 1}>
+            <Button variant="outlined" size="sm" className="flex gap-2 !border !border-creamSecondary  text-creamSecondary hover:bg-creamSecondary hover:text-redPrimary" onClick={prevPage} disabled={currentPage === 1}>
+              <ArrowLeftIcon className="h-4 w-4 stroke-2" />
+
               Previous
             </Button>
-            <Button variant="outlined" size="sm" onClick={nextPage} disabled={currentPage === Math.ceil(filteredData.length / pageSize)}>
+            <Button variant="outlined" size="sm" onClick={nextPage} disabled={currentPage === Math.ceil(filteredData.length / pageSize)} className="flex gap-2 !border !border-creamSecondary  text-creamSecondary hover:bg-creamSecondary hover:text-redPrimary"
+            >
               Next
+              <ArrowRightIcon className="h-4 w-4  stroke-2" />
             </Button>
           </div>
         </CardFooter>
