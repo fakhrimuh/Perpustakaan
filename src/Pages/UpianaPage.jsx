@@ -1,4 +1,4 @@
-import { MagnifyingGlassIcon, ChevronUpDownIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon, ChevronUpDownIcon, ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import {
   Card,
   CardHeader,
@@ -113,11 +113,16 @@ export default function Upiana() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 
             <div className="w-full md:w-72">
-              <Input label="Search" icon={<MagnifyingGlassIcon className="h-5 w-5" />}
+              <Input icon={<MagnifyingGlassIcon className="h-5 w-5 text-redPrimary" />}
                 type="text"
                 placeholder="Cari..."
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)} />
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="!border !border-redPrimary  text-redPrimary  placeholder-redPrimary"
+                labelProps={{
+                  className: "hidden",
+                }}
+              />
             </div>
           </div>
         </CardHeader>
@@ -209,16 +214,20 @@ export default function Upiana() {
             </tbody>
           </table>
         </CardBody>
-        <CardFooter className="flex items-center justify-between border-t border-blue-gray-50 p-4">
-          <Typography variant="small" color="blue-gray" className="font-normal">
-            Page 1 of 10
+        <CardFooter className="flex items-center justify-between border-t border-redPrimary p-4">
+          <Typography variant="small" className="font-normal text-redPrimary">
+            Page {currentPage} of {Math.ceil(filteredData.length / pageSize)}
           </Typography>
           <div className="flex gap-2">
-            <Button variant="outlined" size="sm" onClick={prevPage} disabled={currentPage === 1}>
+            <Button variant="outlined" size="sm" className="flex gap-2 !border !border-redPrimary   text-redPrimary hover:bg-redPrimary hover:text-creamSecondary" onClick={prevPage} disabled={currentPage === 1}>
+              <ArrowLeftIcon className="h-4 w-4 stroke-2" />
+
               Previous
             </Button>
-            <Button variant="outlined" size="sm" onClick={nextPage} disabled={currentPage === Math.ceil(filteredData.length / pageSize)}>
+            <Button variant="outlined" size="sm" onClick={nextPage} disabled={currentPage === Math.ceil(filteredData.length / pageSize)} className="flex gap-2 !border !border-redPrimary   text-redPrimary hover:bg-redPrimary hover:text-creamSecondary"
+            >
               Next
+              <ArrowRightIcon className="h-4 w-4 stroke-2" />
             </Button>
           </div>
         </CardFooter>
