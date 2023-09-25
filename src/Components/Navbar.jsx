@@ -224,32 +224,34 @@ export default function HeaderNavbar() {
   }, []);
 
   return (
-    <Navbar className="mx-auto w-full bg-creamSecondary border-none shadow-none px-4 py-2">
-      <div className="flex items-center justify-between text-blue-gray-900">
-        <Link to="/">
-          <img className="h-24 xl:w-36 sm:w-24" src={Logo} alt="Logo" />
-        </Link>
-        <div className="hidden lg:block">
-          <NavList />
-        </div>
+    <div className="border-b-2 border-redPrimary">
+      <Navbar className="mx-auto w-full border-none shadow-none px-4 py-2" color="transparent">
+        <div className="flex items-center justify-between">
+          <Link to="/">
+            <img className="h-24 xl:w-36 sm:w-24" src={Logo} alt="Logo" />
+          </Link>
+          <div className="hidden lg:block">
+            <NavList />
+          </div>
 
-        {/* Responsive hamburger */}
-        <IconButton
-          variant="text"
-          color="blue-gray"
-          className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </IconButton>
-      </div>
-      <Collapse open={openNav}>
-        <NavList />
-      </Collapse>
-    </Navbar>
+          {/* Responsive hamburger */}
+          <IconButton
+            variant="text"
+            color="blue-gray"
+            className="lg:hidden"
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? (
+              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            ) : (
+              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            )}
+          </IconButton>
+        </div>
+        <Collapse open={openNav}>
+          <NavList />
+        </Collapse>
+      </Navbar>
+    </div>
   );
 }
