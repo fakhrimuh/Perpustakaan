@@ -224,8 +224,8 @@ export default function HeaderNavbar() {
   }, []);
 
   return (
-    <Navbar className="mx-auto w-full bg-creamSecondary border-none shadow-none px-4 py-2">
-      <div className="flex items-center justify-between text-blue-gray-900">
+    <Navbar className="mx-auto w-full border-none shadow-none px-4 py-2" color="transparent">
+      <div className="flex items-center justify-between">
         <Link to="/">
           <img className="h-24 xl:w-36 sm:w-24" src={Logo} alt="Logo" />
         </Link>
