@@ -59,11 +59,11 @@ export default function FakultasPage() {
             <TabsHeader
                 className="bg-transparent font-bold mx-auto text-redPrimary max-w-[40rem]"
                 indicatorProps={{
-                    className: "bg-creamPrimary shadow-none !text-deep-orange-100 font-bold",
+                    className: "bg-creamPrimary shadow-none font-bold",
                 }}
             >
                 {/* Menambahkan tab "All" */}
-                <Tab key="all" value="all" className="text-redPrimary font-bold hover:bg-creamPrimary">
+                <Tab key="all" value="all" className="text-redPrimary font-bold hover:bg-creamPrimary rounded-lg">
                     All
                 </Tab>
                 {data.map(({ label, value }) => (
