@@ -1,6 +1,8 @@
 import { Input } from "@material-tailwind/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import CardIcon from "../Components/Card";
+import { Link } from "react-router-dom";
+
 
 // Import Image for Card
 import AFPBS from "../Asset/Digital Repo/After/FPBS.png"
@@ -90,10 +92,12 @@ export default function DigitalRepository() {
           img1={ACampus}
           img2={BCampus}
           alternatif="UPI Kampus Purwakarta" />
-        <CardIcon title="Kampus Cibiru"
-          img1={ACampus}
-          img2={BCampus}
-          alternatif="UPI Kampus Cibiru" />
+        <Link to="/FakultasPage">
+          <CardIcon title="Kampus Cibiru"
+            img1={ACampus}
+            img2={BCampus}
+            alternatif="UPI Kampus Cibiru" />
+        </Link>
         <CardIcon title="FPBS"
           img1={AFPBS}
           img2={BFPBS}
