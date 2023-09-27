@@ -55,7 +55,7 @@ export default function FakultasPage() {
     const allDescriptions = data.map(({ desc }) => desc).flat();
 
     return (
-        <Tabs value="html" className=" mx-auto">
+        <Tabs value="all" className=" mx-auto">
             <TabsHeader
                 className="bg-transparent font-bold mx-auto text-redPrimary max-w-[40rem]"
                 indicatorProps={{
