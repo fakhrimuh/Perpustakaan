@@ -78,7 +78,9 @@ export default function FakultasPage() {
                     <div className="flex w-max gap-4 mx-auto">
                         {allDescriptions.map((desc, index) => (
                             <div key={index}>
-                                <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 border-2 border-redPrimary hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold"> {desc.name} - {desc.tingkat} </button>
+                                <Link to={desc.link}>
+                                    <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 border-2 border-redPrimary hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold"> {desc.name} - {desc.tingkat} </button>
+                                </Link>
                             </div>
                         ))}
                     </div>
