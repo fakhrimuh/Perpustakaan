@@ -10,6 +10,8 @@ import OpacPage from "./Pages/OpacPage";
 import Upiana from "./Pages/UpianaPage";
 import DigitalRepositary from "./Pages/DigitalRepoPage";
 import LayananMandiri from "./Pages/LayananMandiri";
+import FakultasPage from "./Pages/FakultasPage";
+import JurusanPage from "./Pages/JurusanPage";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path="/Kalista" element={<Kalista />} />
         <Route path="/DigitalRepository" element={<DigitalRepositary />} />
         <Route path="/LayananMandiri" element={<LayananMandiri />} />
+        <Route path="/FakultasPage" element={<FakultasPage />} />
+        <Route path="/JurusanPage" element={<JurusanPage />} />
       </Routes>
       <HomeFooter />
     </div>

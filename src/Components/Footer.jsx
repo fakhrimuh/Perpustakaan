@@ -71,7 +71,7 @@ export default function HomeFooter() {
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="flex justify-between py-5">
           <div className="w-1/3">
-            <div className="bg-creamSecondary text-redPrimary w-3/4 p-2">
+            <div className="bg-creamSecondary text-redPrimary w-3/4 p-2 rounded-xl">
               <img src={Logo} alt="logo" className="h-36" />
               <div>
                 <div className="flex flex-row overflow-visible">
