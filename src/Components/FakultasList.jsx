@@ -26,7 +26,7 @@ import BFPTK from "../Asset/Digital Repo/Before/FPTK.png"
 export default function FakultasList() {
     return (
         <div>
-            <h1 className="text-center text-redPrimary font-bold text-4xl">Fakultas</h1>
+            <h1 className="text-center text-redPrimary mb-12 font-bold text-4xl">Fakultas</h1>
             <div className="text-center mx-4 content-center grid xl:grid-cols-7 grid-rows-3 md:grid-cols-2">
                 <CardIcon title="FPEB"
                     img1={AFPEB}
