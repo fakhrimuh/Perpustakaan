@@ -6,8 +6,8 @@ import FakultasList from "../Components/FakultasList";
 
 export default function DigitalRepository() {
   return (
-    <div className="container mx-auto mb-4">
-      <div className="w-1/2 my-4 flex gap-2 mx-auto">
+    <div className="container mx-auto">
+      <div className="w-1/2 my-4 flex gap-2 mx-auto mb-16">
         <Input
           type="text"
           placeholder="Kata Kunci"
