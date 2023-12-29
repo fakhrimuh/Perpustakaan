@@ -6,13 +6,17 @@ import pmc from '../Asset/Tabs/E-Journal/PMC.png';
 import SageJournals from '../Asset/Tabs/E-Journal/Sage Journals.png';
 import direct from '../Asset/Tabs/E-Journal/sciencedirect.png';
 import Springer from '../Asset/Tabs/E-Journal/Springer Link.png';
-import IGLibrary from '../Asset/Tabs/E-Books/image 1.png';
-import IEEE from '../Asset/Tabs/E-Books/IEEE.png';
+import SageMethod from '../Asset/Tabs/E-Books/Sage research method.png';
+import TaylorFrancis from '../Asset/Tabs/E-Books/Taylor and francis.png';
+import oxfordAcademy from '../Asset/Tabs/E-Books/Oxford academic.png';
+import IGLibrary from '../Asset/Tabs/E-Books/Ig Library.png';
+import IEEE from '../Asset/Tabs/E-Books/IEEE Xplore.png';
 import Anmol from '../Asset/Tabs/E-Books/Anmol Publication.png';
 import MathSolution from '../Asset/Tabs/E-Books/Mathsolution.png';
-import SageKnowledge from '../Asset/Tabs/E-Books/Sage Knowledge.png';
-
-const TABLE_HEAD = ['Sumber', 'Link', 'Deskripsi'];
+import SageKnowledge from '../Asset/Tabs/E-Books/Sage.png';
+import Mendikbud from '../Asset/Tabs/partner-upi/Kemendikbud.png';
+import Perpunas from '../Asset/Tabs/partner-upi/Perpusnas.png';
+import Sinta from '../Asset/Tabs/partner-upi/Sinta.png';
 
 const EJournal = [
   {
@@ -51,76 +55,93 @@ const EJournal = [
     desc: 'Multidiciplinary (1997 – yang terbaru)',
   },
 ];
+const sumberInfo = [
+  {
+    image: SageMethod,
+    link: 'SAGE Research Method',
+    desc: 'Sumber daya online ini dibuat untuk membantu mahasiswa dan peneliti di bidang ilmu sosial, perilaku, dan kesehatan dalam merancang proyek penelitian, memahami metode atau mengidentifikasi metode baru, menjalankan penelitian, dan menyusun hasil temuan mereka',
+  },
+];
 
 const EBook = [
   {
-    image: Oxford,
-    link: 'Oxford',
-    desc: 'Business and Management, Classical Studies, Economics and Finance, History, Law, Linguistics, Philosophy, Political Science, Psychology, Religion, Social Work',
+    image: TaylorFrancis,
+    link: 'Taylor & Francis',
+    desc: 'Desain Komunikasi Visual, Geografi, Kelautan, Mekatronika & Robotik, Multimedia, Musik, Otomotif, Rekayasa Perangkat lunak',
+  },
+  {
+    image: oxfordAcademy,
+    link: 'Oxford Academic',
+    desc: 'Bisnis dan Manajemen, Studi Klasik, Ekonomi dan Keuangan, Sejarah, Hukum, Linguistik, Filsafat, Ilmu Politik, Psikologi, Agama, Pekerjaan Sosial',
   },
   {
     image: IGLibrary,
     link: 'IG Library',
-    desc: 'Business & Economics, Computers, Design, Education, Law, Mathematics,Medical, Psychology, Reference, Science, Self-Help, Technology & Engineering, Travel',
+    desc: 'Bisnis & Ekonomi, Komputer, Desain, Pendidikan, Hukum, Matematika, Kedokteran, Psikologi, Referensi, Sains, Bantuan Diri, Teknologi & Rekayasa, Perjalanan',
   },
   {
     image: MathSolution,
     link: 'Math Solutions',
-    desc: 'Education, Mathematics',
+    desc: 'Pendidikan dan Matematika',
   },
   {
     image: Anmol,
     link: 'Anmol',
-    desc: 'Education, Reference',
+    desc: 'Pendidikan dan Referensi',
   },
   {
     image: Springer,
     link: 'Springer',
-    desc: 'Multidiciplinary',
+    desc: 'Multidisiplin',
   },
   {
     image: Emerald,
     link: 'Emerald',
-    desc: 'Multidiciplinary',
+    desc: 'Multidisiplin',
   },
   {
     image: IEEE,
     link: 'IEEE Explore',
-    desc: 'Computer Science',
+    desc: 'Ilmu Komputer',
   },
   {
     image: SageKnowledge,
     link: 'Sage Books',
-    desc: 'Business & Management, Counseling & Psychotherapy, Criminology & Criminal Justice, Education, Geography, Earth & Environmental Science, Health & Social Care, Media, Communication & Cultural Studies, Politics & International Relations, Psychology, Social Work, Sociology',
+    desc: 'Bisnis dan Manajemen, Konseling dan Psikoterapi, Kriminologi dan Kehakiman Pidana, Pendidikan, Geografi, Ilmu Bumi dan Lingkungan, Kesehatan dan Perawatan Sosial, Media, Komunikasi dan Studi Budaya, Politik dan Hubungan Internasional, Psikologi, Pekerjaan',
   },
 ];
 
 const Lokal = [
   {
-    image: 'e-Resources\nPerpusnas',
-    link: 'Sage',
+    image: Perpunas,
+    link: 'E-Resource Perpusnas',
     desc: 'Bahan perpustakaan digital online (e-Resources) seperti jurnal , ebook, dan karya-karya referensi online lainnya. Terdiri dari 4 penerbit lokal dan 27 penerbit internasional. Untuk mendapatkan layanan e-Resources ini, silahkan daftar menjadi anggota Perpustakaan Nasional Republik Indonesia (Perpusnas) melalui link berikut: https://keanggotaan.perpusnas.go.id',
   },
   {
-    image: 'e-Journal SINTA',
-    link: 'Emerald',
+    image: Sinta,
+    link: 'E-Journal Sinta',
     desc: 'Jurnal yang diterbitkan oleh perguruan tinggi di Indonesia yang telah terindex oleh sinta. Saat ini terdapat 5148 jurnal',
   },
   {
-    image: 'e-Journal Kemendikbud',
-    link: 'Oxford',
-    desc: 'Jurnal elektronik kemendikbud dengan berbagai subjek dari provinsi di Indonesia. Saat ini terdapat 88 e-Journal yang dapat diakses secara online.',
+    image: Mendikbud,
+    link: 'E-Journal Kemendikbud',
+    desc: 'Jurnal elektronik kemendikbud dengan berbagai subjek dari provinsi di Indonesia. Saat ini terdapat 88 e-Journal yang dapat diakses secara online',
   },
   {
-    image: 'e-Journal Internasional Kemendikbud',
-    link: 'Springer',
+    image: Mendikbud,
+    link: 'E-Journal Internasional Kemendikbud',
     desc: 'Jurnal internasional  yang dilanggan kemendikbud. Saat ini terdapat 9 jurnal. Untuk mendapatkan artikel, Anda dapat mengajukan permohonal artikel melalui email ke Perpustakaan Kemendikbud',
+  },
+  {
+    image: Mendikbud,
+    link: 'E-Book Kemendikbud',
+    desc: 'Potret Pendidikan Tinggi di Masa Covid-19',
   },
 ];
 
 export default function EJournalPage() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-[115px]">
       <div className="my-8">
         <Typography variant="h2" className="text-redPrimary font-bold mt-20">
           E-Journal dan E-Book
@@ -146,7 +167,7 @@ export default function EJournalPage() {
         </div>
       </div>
 
-      <div className="my-10">
+      <div className="my-14">
         <Typography variant="h2" className="my-6 text-redPrimary text-center font-bold">
           E-Journal
         </Typography>
@@ -177,87 +198,90 @@ export default function EJournalPage() {
         </div>
       </div>
 
-      <div className="my-10">
+      <div className="my-14">
         <Typography variant="h2" className="my-6 text-redPrimary text-center font-bold">
           Aneka Sumber Informasi
         </Typography>
         <div className="w-full flex justify-center flex-wrap gap-4">
-          <div className="max-w-[650px] flex bg-redPrimary rounded-lg gap-3 p-4">
-            <img src={SageJournals} alt="logo" className="my-auto object-cover" />
-            <div>
-              <Typography variant="h4" className="text-creamSecondary">
-                SAGE Research Method
-              </Typography>
-              <Typography variant="paragraph" className="text-creamSecondary text-sm my-4 text-justify">
-                Sumber daya online ini dibuat untuk membantu mahasiswa dan peneliti di bidang ilmu sosial, perilaku, dan kesehatan dalam merancang proyek penelitian, memahami metode atau mengidentifikasi metode baru, menjalankan penelitian,
-                dan menyusun hasil temuan mereka Kunjungi
-              </Typography>
-              <div className="w-full flex">
-                <Button size="md" className="me-4 text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
-                  Journal List
-                </Button>
-                <Button size="md" className="text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
-                  Kunjungi
-                </Button>
+          {sumberInfo.map(({ image, link, desc }, index) => (
+            <div className="max-w-[650px] flex bg-redPrimary rounded-lg gap-3 p-4">
+              <img src={image} alt="logo" className="my-auto object-cover" />
+              <div>
+                <Typography variant="h4" className="text-creamSecondary">
+                  {link}
+                </Typography>
+                <Typography variant="paragraph" className="text-creamSecondary text-sm my-4 text-justify">
+                  {desc}
+                </Typography>
+                <div className="w-full flex">
+                  <Button size="md" className="me-4 text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
+                    Journal List
+                  </Button>
+                  <Button size="md" className="text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
+                    Kunjungi
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      <div className="my-10">
+      <div className="my-14">
         <Typography variant="h2" className="my-6 text-redPrimary text-center font-bold">
           E-Book
         </Typography>
         <div className="w-full flex justify-center flex-wrap gap-4">
-          <div className="max-w-[650px] flex bg-redPrimary rounded-lg gap-3 p-4">
-            <img src={SageJournals} alt="logo" className="my-auto object-cover" />
-            <div>
-              <Typography variant="h4" className="text-creamSecondary">
-                SAGE Research Method
-              </Typography>
-              <Typography variant="paragraph" className="text-creamSecondary text-sm my-4 text-justify">
-                Sumber daya online ini dibuat untuk membantu mahasiswa dan peneliti di bidang ilmu sosial, perilaku, dan kesehatan dalam merancang proyek penelitian, memahami metode atau mengidentifikasi metode baru, menjalankan penelitian,
-                dan menyusun hasil temuan mereka Kunjungi
-              </Typography>
-              <div className="w-full flex">
-                <Button size="md" className="me-4 text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
-                  Journal List
-                </Button>
-                <Button size="md" className="text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
-                  Kunjungi
-                </Button>
+          {EBook.map(({ image, link, desc }, index) => (
+            <div className="lg:w-[650px]  flex bg-redPrimary rounded-lg gap-3 p-4">
+              <img src={image} alt="logo" className="my-auto object-cover" />
+              <div>
+                <Typography variant="h4" className="text-creamSecondary">
+                  {link}
+                </Typography>
+                <Typography variant="paragraph" className="text-creamSecondary text-sm my-4 text-justify">
+                  {desc}
+                </Typography>
+                <div className="w-full flex">
+                  <Button size="md" className="me-4 text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
+                    Journal List
+                  </Button>
+                  <Button size="md" className="text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
+                    Kunjungi
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      <div className="my-10">
+      <div className="my-14">
         <Typography variant="h2" className="my-6 text-redPrimary text-center font-bold">
           Partner UPI
         </Typography>
         <div className="w-full flex justify-center flex-wrap gap-4">
-          <div className="max-w-[650px] flex bg-redPrimary rounded-lg gap-3 p-4">
-            <img src={SageJournals} alt="logo" className="my-auto object-cover" />
-            <div>
-              <Typography variant="h4" className="text-creamSecondary">
-                SAGE Research Method
-              </Typography>
-              <Typography variant="paragraph" className="text-creamSecondary text-sm my-4 text-justify">
-                Sumber daya online ini dibuat untuk membantu mahasiswa dan peneliti di bidang ilmu sosial, perilaku, dan kesehatan dalam merancang proyek penelitian, memahami metode atau mengidentifikasi metode baru, menjalankan penelitian,
-                dan menyusun hasil temuan mereka Kunjungi
-              </Typography>
-              <div className="w-full flex">
-                <Button size="md" className="me-4 text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
-                  Journal List
-                </Button>
-                <Button size="md" className="text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
-                  Kunjungi
-                </Button>
+          {Lokal.map(({ image, link, desc }, index) => (
+            <div className="lg:w-[650px]  flex bg-redPrimary rounded-lg gap-3 p-4">
+              <img src={image} alt="logo" className="my-auto object-cover" />
+              <div>
+                <Typography variant="h4" className="text-creamSecondary">
+                  {link}
+                </Typography>
+                <Typography variant="paragraph" className="text-creamSecondary text-sm my-4 text-justify">
+                  {desc}
+                </Typography>
+                <div className="w-full flex">
+                  <Button size="md" className="me-4 text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
+                    Journal List
+                  </Button>
+                  <Button size="md" className="text-creamSecondary hover:text-redPrimary bg-redPrimary hover:bg-creamSecondary border-solid border-[1.5px] border-creamSecondary">
+                    Kunjungi
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
