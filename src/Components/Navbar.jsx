@@ -221,7 +221,7 @@ export default function HeaderNavbar() {
   }, []);
 
   return (
-    <div className="border-b-2 border-redPrimary">
+    <div className="">
       <Navbar className="mx-auto w-full border-none shadow-none px-4 py-2" color="transparent">
         <div className="flex items-center justify-between">
           <Link to="/">
