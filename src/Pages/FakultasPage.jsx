@@ -59,7 +59,7 @@ export default function FakultasPage() {
   const allDescriptions = data.map(({ desc }) => desc).flat();
 
   return (
-    <div className="mt-[115px]">
+    <div>
       <Tabs value="all" className=" mx-auto">
         <TabsHeader
           className="bg-transparent font-bold mx-auto text-redPrimary max-w-[40rem]"
