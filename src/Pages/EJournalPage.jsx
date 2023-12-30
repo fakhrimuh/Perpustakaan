@@ -141,7 +141,7 @@ const Lokal = [
 
 export default function EJournalPage() {
   return (
-    <div className="container mx-auto mt-[115px]">
+    <div className="container mx-auto mt-[110px]">
       <div className="my-8">
         <Typography variant="h2" className="text-redPrimary font-bold mt-20">
           E-Journal dan E-Book

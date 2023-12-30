@@ -19,7 +19,7 @@ const TABLE_DATA = {
         pengembalian: '28/05/24',
       },
       {
-        judul: 'Test Book',
+        judul: 'Mindset: The New Psychology of Success',
         peminjaman: '23/05/24',
         pengembalian: '28/05/24',
       },
@@ -29,12 +29,12 @@ const TABLE_DATA = {
     nama: 'Sumardi',
     data: [
       {
-        judul: 'Judul 1 untuk 7654321',
+        judul: 'Sapiens: A Brief History of Humankind',
         peminjaman: '23/04/23',
         pengembalian: '27/04/23',
       },
       {
-        judul: 'Judul 2 untuk 7654321',
+        judul: 'The Power of Habit: Why We Do What We Do in Life and Business',
         peminjaman: '23/05/24',
         pengembalian: '28/05/24',
       },
@@ -70,7 +70,7 @@ export default function PeminjamanPage() {
   };
 
   return (
-    <div className="mt-[115px]">
+    <div className="mt-[110px]">
       <div className="text-center text-redPrimary my-4">
         <h1 className="font-bold text-4xl mb-12">Cek Peminjaman</h1>
         <div className="w-1/2 mb-10 flex items-center mx-auto">
@@ -103,6 +103,7 @@ export default function PeminjamanPage() {
           <CardBody>
             {tableData.data.length > 0 ? (
               <div className="overflow-x-auto">
+                <Typography className="font-semibold text-lg text-redPrimary mb-4">{tableData.nama}</Typography>
                 <table className="w-full min-w-max bg-creamSecondary border-2 border-redPrimary table-auto text-black text-left shadow-lg">
                   <thead>
                     <tr>
@@ -140,8 +141,11 @@ export default function PeminjamanPage() {
               </div>
             ) : (
               <div>
-                <BookOpenIcon className="w-28 h-28 mx-auto text-redPrimary" />
-                <Typography className="text-redPrimary text-base text-center font-bold my-6">Tidak ada data peminjaman</Typography>
+                <Typography className="font-semibold text-lg text-redPrimary mb-2">{tableData.nama}</Typography>
+                <div>
+                  <BookOpenIcon className="w-28 h-28 mx-auto text-redPrimary" />
+                  <Typography className="text-redPrimary text-base text-center font-bold my-6">Tidak ada data peminjaman</Typography>
+                </div>
               </div>
             )}
           </CardBody>

@@ -5,12 +5,12 @@ import FakultasList from '../Components/FakultasList';
 
 export default function DigitalRepository() {
   return (
-    <div className="mt-[115px]">
+    <div className="mt-[110px]">
       <div class="relative">
-        <img src={Upi} alt="Gambar" class="w-full h-auto" />
+        <img src={Upi} alt="Gambar" class="w-full h-auto object" />
 
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[-100px] text-white text-center">
-          <h1 class="text-4xl font-bold">Digital Repositori</h1>
+          <h1 class="text-4xl font-bold">Digital Repository</h1>
         </div>
 
         <div class="absolute w-full h-fit top-full left-1/2 transform -translate-x-1/2 -translate-y-14">

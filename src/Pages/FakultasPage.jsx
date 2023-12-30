@@ -62,7 +62,7 @@ export default function FakultasPage() {
   const allDescriptions = data.map(({ desc }) => desc).flat();
 
   return (
-    <div className="mt-[113px]">
+    <div className="mt-[110px]">
       <div class="relative">
         <img src={cibiru} alt="Gambar" class="w-full h-auto" />
 
