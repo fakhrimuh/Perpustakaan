@@ -2,7 +2,7 @@ import { Input, Typography, Card, CardHeader, CardBody } from '@material-tailwin
 import { Link } from 'react-router-dom';
 import FakultasList from '../Components/FakultasList';
 import { UserIcon, ArchiveBoxIcon, ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 
 const dataJson = {
   1: {
@@ -171,25 +171,31 @@ export default function JurusanPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const totalItems = Object.keys(searchResults).length || Object.keys(dataJson).length;
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const [searchedData, setSearchedData] = useState([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const totalItems = Object.keys(dataJson).length;
 
-  // Mencari hasil pencarian
+  const filteredData = useMemo(() => {
+    return isSearching ? searchedData : Object.values(dataJson);
+  }, [isSearching, searchedData]);
+
   const handleSearch = () => {
-    const results = Object.values(dataJson).filter((item) => item.judul.toLowerCase().includes(searchTerm.toLowerCase()));
-    setSearchResults(results);
-    setCurrentPage(1); // Reset halaman ke halaman pertama saat melakukan pencarian
+    if (searchTerm.trim() !== '') {
+      const term = searchTerm.toLowerCase();
+      const results = Object.values(dataJson).filter((item) => item.judul.toLowerCase().includes(term) || item.penulis.toLowerCase().includes(term) || item.jenis.toLowerCase().includes(term));
+      setSearchedData(results);
+      setIsSearching(true);
+      setCurrentPage(1);
+    } else {
+      setIsSearching(false);
+    }
   };
 
-  const currentData = searchTerm ? searchResults : Object.values(dataJson);
-
-  // Logika pagination
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = searchResults.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Fungsi untuk navigasi halaman
   const nextPage = () => {
     setCurrentPage((prevPage) => (prevPage === totalPages ? prevPage : prevPage + 1));
   };
@@ -198,11 +204,10 @@ export default function JurusanPage() {
     setCurrentPage((prevPage) => (prevPage === 1 ? prevPage : prevPage - 1));
   };
 
-  // Fungsi untuk mengubah jumlah item per halaman
   const handleItemsPerPageChange = (e) => {
     const newItemsPerPage = parseInt(e.target.value, 10);
     setItemsPerPage(newItemsPerPage);
-    setCurrentPage(1); // Reset halaman ke halaman pertama saat mengubah jumlah item per halaman
+    setCurrentPage(1);
   };
 
   return (
@@ -238,9 +243,7 @@ export default function JurusanPage() {
       <div className="container flex gap-4 mx-auto mb-6">
         {/* Daftar Jurnal */}
         <div className="w-3/4 border border-redPrimary rounded-lg">
-          {Object.keys(currentItems).map((key) => {
-            const index = parseInt(key, 10);
-            const book = currentItems[key];
+          {currentItems.map((book, index) => {
             const bookIndex = indexOfFirstItem + index + 1;
             return (
               <Link to={book.link} target="_blank" key={index}>
@@ -254,15 +257,12 @@ export default function JurusanPage() {
                     <Typography color="black" className="mb-3 text-base font-semibold text-left">
                       {book.judul}
                     </Typography>
-                    {/* Icon 1 */}
                     <div className="flex gap-3 mb-2">
                       <UserIcon className="w-5 h-5 text-redPrimary" />
                       <Typography color="black" className="text-sm">
                         {book.penulis} {book.nim} - {book.tahun}
                       </Typography>
                     </div>
-
-                    {/* Icon 2 */}
                     <div className="flex gap-3 mb-">
                       <ArchiveBoxIcon className="w-5 h-5 text-redPrimary" />
                       <Typography color="black" className="text-sm">
@@ -278,7 +278,7 @@ export default function JurusanPage() {
           {/* Pagination */}
           <div className="container w-11/12 max-w-screen-lg mx-auto flex justify-between gap-6 mb-4">
             <Typography className="text-left text-sm mt-2">
-              {indexOfFirstItem + 1} - {Math.min(indexOfLastItem, totalItems)} dari {totalItems} baris
+              {indexOfFirstItem + 1} - {Math.min(indexOfLastItem, totalItems)} dari {filteredData.length} baris
             </Typography>
             <div className="flex">
               <Typography className="text-sm mt-2">Jumlah baris per halaman</Typography>
