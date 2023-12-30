@@ -25,22 +25,22 @@ export default function FakultasPage() {
         },
         {
           name: 'Pendidikan Guru Sekolah Dasar',
-          link: '/a',
+          link: '#a',
           tingkat: 'S1',
         },
         {
           name: 'PGPAUD',
-          link: '/a',
+          link: '#a',
           tingkat: 'S1',
         },
         {
           name: 'Pendidikan Multimedia',
-          link: '/a',
+          link: '#a',
           tingkat: 'S1',
         },
         {
           name: 'Teknik Komputer',
-          link: '/a',
+          link: '#a',
           tingkat: 'S1',
         },
       ],
@@ -51,7 +51,7 @@ export default function FakultasPage() {
       desc: [
         {
           name: 'Pendidikan Guru Sekolah Dasar',
-          link: '/a',
+          link: '#a',
           tingkat: 'S2',
         },
       ],
