@@ -16,7 +16,7 @@ import JurusanPage from './Pages/JurusanPage';
 function App() {
   return (
     <div className="bg-creamSecondary font-sans">
-      <HeaderNavbar className="fixed top-0" />
+      <HeaderNavbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/usulanbuku" element={<NewBookPage />} />
