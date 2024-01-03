@@ -1,7 +1,7 @@
 import { Input, Typography, Card, CardHeader, CardBody } from '@material-tailwind/react';
 import { Link } from 'react-router-dom';
 import FakultasList from '../Components/FakultasList';
-import { UserIcon, ArchiveBoxIcon, ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
+import { UserIcon, ArchiveBoxIcon } from '@heroicons/react/24/outline';
 import React, { useState, useMemo } from 'react';
 
 const dataJson = {
@@ -350,7 +350,7 @@ export default function JurusanPage() {
         </div>
       </div>
 
-      <div>
+      <div className="mt-10">
         <FakultasList className="mx-auto" />
       </div>
     </div>
