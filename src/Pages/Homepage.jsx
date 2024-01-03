@@ -31,7 +31,7 @@ import AHPI from '../Asset/After Hover/Paket Informasi.png';
 
 export default function HomePage() {
   return (
-    <div className=" bg-creamSecondary mt-[115px]">
+    <div className=" bg-creamSecondary mt-[110px]">
       <div className="container mx-auto">
         {/* <BookForm /> */}
         <CarouselHome />
