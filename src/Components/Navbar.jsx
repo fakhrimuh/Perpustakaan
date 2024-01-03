@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../Asset/LogoPerpus.png';
 import { Navbar, Collapse, IconButton, List } from '@material-tailwind/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -11,63 +11,39 @@ const TentangKami = [
     Content: [
       {
         Name: 'Profil Perpustakaan',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Visi dan Misi',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Struktur Organisasi',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Jejaring',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Tim Manajemen',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Staf Perpustakaan',
-        Links: 'a',
+        Links: '#',
       },
       {
-        Name: 'Tata Tertib',
-        Links: 'a',
+        Name: 'Jejaring',
+        Links: '#',
       },
       {
         Name: 'Fasilitas',
-        Links: 'a',
-      },
-    ],
-  },
-];
-
-const QuickLinks = [
-  {
-    Title: 'Quick Links',
-    Content: [
-      {
-        Name: 'Katalog',
-        Links: 'a',
+        Links: '#',
       },
       {
-        Name: 'Cek Pinjam Online',
-        Links: 'a',
-      },
-      {
-        Name: 'Repository',
-        Links: 'a',
-      },
-      {
-        Name: 'E-Journal dan E-Book',
-        Links: 'a',
-      },
-      {
-        Name: 'Kontribusi Buku',
-        Links: 'a',
+        Name: 'Statistik',
+        Links: '#',
       },
     ],
   },
@@ -79,27 +55,35 @@ const Layanan = [
     Content: [
       {
         Name: 'Bebas Pinjam',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Dokumentasi Referensi',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Dokumentasi UPIana',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Dokumentasi Kurikulum',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Keanggotaan',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'Survei Kepuasan Pemustaka',
-        Links: 'a',
+        Links: '#',
+      },
+      {
+        Name: 'Layanan Kunjungan',
+        Links: '#',
+      },
+      {
+        Name: 'Paket Informasi Terpilih',
+        Links: '#',
       },
     ],
   },
@@ -111,43 +95,43 @@ const Koleksi = [
     Content: [
       {
         Name: 'Repository (Skripsi, Tesis & Disertasi)',
-        Links: 'a',
-      },
-      {
-        Name: 'Pendaftaran Akun MyLOFT',
-        Links: 'a',
+        Links: '/DigitalRepository',
       },
       {
         Name: 'E-Journal dan E-Book',
-        Links: 'a',
+        Links: '/E-Journal',
       },
       {
         Name: 'Jurnal Tercetak',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'OER Kalista',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'E-Journal UPI',
-        Links: 'a',
+        Links: '#',
+      },
+      {
+        Name: 'OPAC',
+        Links: '#',
       },
       {
         Name: 'ELIB UPI',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'OLIB UPI',
-        Links: 'a',
+        Links: '#',
       },
       {
         Name: 'OALIB UPI',
-        Links: 'a',
+        Links: '#',
       },
       {
-        Name: 'Ea-Research',
-        Links: 'a',
+        Name: 'A-Research',
+        Links: '#',
       },
     ],
   },
@@ -155,47 +139,35 @@ const Koleksi = [
 
 const LayananDaring = [
   {
-    Title: 'Layanan Daring',
+    Title: 'Panduan Informasi',
     Content: [
       {
-        Name: 'Layanan CERIA',
-        Links: 'a',
+        Name: 'Informasi Wajib Berada',
+        Links: '#',
       },
       {
-        Name: 'Registrasi Akun Turnitin',
-        Links: 'a',
+        Name: 'Informasi Wajib Setiap Saat',
+        Links: '#',
       },
       {
-        Name: 'Online Library (OLIB)',
-        Links: 'a',
+        Name: 'Permohonan Informasi Publik',
+        Links: '#',
       },
       {
-        Name: 'Bebas Pinjam (Sidang)',
-        Links: 'a',
+        Name: 'Buku Saku Layanan',
+        Links: '#',
       },
       {
-        Name: 'Konfirmasi Unggah Mandiri',
-        Links: 'a',
+        Name: 'Unggah Mandiri Repository',
+        Links: '#',
       },
       {
-        Name: 'Paket Informasi Terpilih',
-        Links: 'a',
+        Name: 'Peminjaman Mandiri',
+        Links: '#',
       },
       {
-        Name: 'Pendaftaran Akun MyLOFT',
-        Links: 'a',
-      },
-      {
-        Name: 'Prosedur Buku Hilang',
-        Links: 'a',
-      },
-      {
-        Name: 'Usulan Buku Baru',
-        Links: 'a',
-      },
-      {
-        Name: 'Cek Pinjaman',
-        Links: 'a',
+        Name: 'Pencegahan Plagiarism',
+        Links: '#',
       },
     ],
   },
@@ -205,7 +177,6 @@ function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 text-redPrimary">
       <NavListMenu skillsData={TentangKami} />
-      <NavListMenu skillsData={QuickLinks} />
       <NavListMenu skillsData={Layanan} />
       <NavListMenu skillsData={Koleksi} />
       <NavListMenu skillsData={LayananDaring} />
@@ -214,14 +185,28 @@ function NavList() {
 }
 
 export default function HeaderNavbar() {
-  const [openNav, setOpenNav] = React.useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  const [showBorder, setShowBorder] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setShowBorder(currentScrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   React.useEffect(() => {
     window.addEventListener('resize', () => window.innerWidth >= 960 && setOpenNav(false));
   }, []);
 
   return (
-    <div className="fixed top-0 bg-creamSecondary w-full z-50 border-b-2 border-redPrimary">
+    <div className={`fixed top-0 bg-creamSecondary w-full z-50 ${showBorder ? 'border-b-2 border-redPrimary' : ''}`}>
       <Navbar className="mx-auto w-full border-none shadow-none px-4 py-2" color="transparent">
         <div className="flex items-center justify-between">
           <Link to="/">
