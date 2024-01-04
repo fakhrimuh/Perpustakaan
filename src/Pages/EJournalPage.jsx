@@ -20,24 +20,9 @@ import Sinta from '../Asset/Tabs/partner-upi/Sinta.png';
 
 const EJournal = [
   {
-    image: Cambridge,
-    link: 'Cambridge',
-    desc: 'Ilmu sosial',
-  },
-  {
-    image: Emerald,
-    link: 'Emerald',
-    desc: 'akuntansi, keuangan, dan ekonomi untuk koleksi bisnis. Selain itu, terdapat koleksi dalam manajemen strategis, pendidikan, teknik, sumber daya manusia, pembelajaran, dan studi organisasi. Koleksi ini juga melibatkan aspek-aspek seperti manajemen informasi, manajemen pengetahuan, pemasaran, operasi, logistik, kualitas, manajemen properti, lingkungan binaan, kebijakan publik, manajemen lingkungan, pariwisata, perhotelan, serta kesehatan dan perawatan sosial.',
-  },
-  {
-    image: Oxford,
-    link: 'Oxford',
-    desc: 'Ilmu kehidupan, matematika, dan ilmu fisika',
-  },
-  {
-    image: pmc,
-    link: 'Pubmed Central',
-    desc: 'PubMed Central® (PMC) adalah arsip teks penuh gratis dari literatur jurnal biomedis dan ilmu kehidupan yang berada di Perpustakaan Nasional Institut Kesehatan (NIH/NLM) di Amerika Serikat',
+    image: direct,
+    link: 'Science Direct',
+    desc: 'Teknik Kimia, Kimia, Ilmu Komputer, Ilmu Bumi dan Planet, Energi, Teknik, Ilmu Bahan, Matematika, Fisika, Astronomi, Ilmu Pertanian dan Biologi, Biokimia, Genetika dan Biologi Molekuler, Ilmu Lingkungan, Imunologi dan Mikrobiologi, Neuro sains, Kedokteran dan Kedokteran Gigi, Keperawatan dan Profesi Kesehatan, Farmakologi, Toksikologi, dan Ilmu Farmasi, Ilmu Kedokteran Hewan dan Kedokteran Hewan, Seni dan Humaniora, Bisnis, Manajemen, dan Akuntansi, Ilmu Keputusan, Ekonomi, Ekonometrika, dan Keuangan, Psikologi, dan Ilmu Sosial',
   },
   {
     image: SageJournals,
@@ -45,14 +30,29 @@ const EJournal = [
     desc: 'Social Humanity Science, Science, Technology, and Medicine, Health Sciences, Nursing, Public Health',
   },
   {
-    image: direct,
-    link: 'Science Direct',
-    desc: 'Teknik Kimia, Kimia, Ilmu Komputer, Ilmu Bumi dan Planet, Energi, Teknik, Ilmu Bahan, Matematika, Fisika, Astronomi, Ilmu Pertanian dan Biologi, Biokimia, Genetika dan Biologi Molekuler, Ilmu Lingkungan, Imunologi dan Mikrobiologi, Neuro sains, Kedokteran dan Kedokteran Gigi, Keperawatan dan Profesi Kesehatan, Farmakologi, Toksikologi, dan Ilmu Farmasi, Ilmu Kedokteran Hewan dan Kedokteran Hewan, Seni dan Humaniora, Bisnis, Manajemen, dan Akuntansi, Ilmu Keputusan, Ekonomi, Ekonometrika, dan Keuangan, Psikologi, dan Ilmu Sosial',
+    image: Emerald,
+    link: 'Emerald',
+    desc: 'akuntansi, keuangan, dan ekonomi untuk koleksi bisnis. Selain itu, terdapat koleksi dalam manajemen strategis, pendidikan, teknik, sumber daya manusia, pembelajaran, dan studi organisasi. Koleksi ini juga melibatkan aspek-aspek seperti manajemen informasi, manajemen pengetahuan, pemasaran, operasi, logistik, kualitas, manajemen properti, lingkungan binaan, kebijakan publik, manajemen lingkungan, pariwisata, perhotelan, serta kesehatan dan perawatan sosial.',
   },
   {
     image: Springer,
     link: 'Springer',
     desc: 'Multidiciplinary (1997 – yang terbaru)',
+  },
+  {
+    image: Oxford,
+    link: 'Oxford',
+    desc: 'Ilmu kehidupan, matematika, dan ilmu fisika',
+  },
+  {
+    image: Cambridge,
+    link: 'Cambridge',
+    desc: 'Ilmu sosial',
+  },
+  {
+    image: pmc,
+    link: 'Pubmed Central',
+    desc: 'PubMed Central® (PMC) adalah arsip teks penuh gratis dari literatur jurnal biomedis dan ilmu kehidupan yang berada di Perpustakaan Nasional Institut Kesehatan (NIH/NLM) di Amerika Serikat',
   },
 ];
 const sumberInfo = [
@@ -142,29 +142,29 @@ const Lokal = [
 export default function EJournalPage() {
   return (
     <div className="container mx-auto mt-[110px]">
-      <div className="my-8">
+      <div className="my-8 w-11/12">
         <Typography variant="h2" className="text-redPrimary font-bold mt-20">
           E-Journal dan E-Book
         </Typography>
         <Typography variant="h4" className="text-redPrimary font-semibold">
           Ketentuan Akses E-Journal dan E-Books dari dalam dan luar Kampus UPI
         </Typography>
-        <Typography variant="paragraph" className="my-2 mx-auto leading-normal text-xl font-medium text-black text-justify">
+        <Typography className="my-2 mx-auto leading-normal text-xl font-medium text-black text-justify">
           E-Journals dan E-Books yang dilanggan UPI dapat diakses menggunakan wifi atau jaringan komputer yang dikelola oleh direktorat STI. Sedangkan akses dari luar kampus dapat menggunakan Aplikasi MyLOFT. Berikut proses pendaftaran dan
           instalasi aplikasi MyLOFT:
           <ol className="my-4">
             <li>1. Melakukan pendaftaran di link https://perpustakaan.upi.edu/akunmyloft (login menggunakan akun email @upi.edu)</li>
             <li>2. Membuat password dengan klik link yang diberikan MyLOFT di email setelah admin mendaftarkan</li>
-            <li>3. Instal exstensi myloft di browser chrome, Google Play/App Store</li>
+            <li>3. Instal ekstensi myloft di browser chrome, Google Play/App Store</li>
             <li>4. Login menggunakan email dan password yang telah dibuat</li>
           </ol>
           Untuk instalasi aplikasi MyLOFT dan cara penggunaannya dapat dilihat pada panduan dibawah Daftar Akun MyLOFT
         </Typography>
-        <div className="flex items-center w-fit my-12 mx-auto">
-          <Button size="md" className="bg-redPrimary text-creamSecondary hover:bg-creamSecondary hover:text-redPrimary  border-solid border-[1.5px] border-redPrimary">
-            Daftar Akun MyLOFT
-          </Button>
-        </div>
+      </div>
+      <div className="flex items-center w-fit my-12 mx-auto">
+        <Button size="md" className="bg-redPrimary text-creamSecondary hover:bg-creamSecondary hover:text-redPrimary  border-solid border-[1.5px] border-redPrimary">
+          Daftar Akun MyLOFT
+        </Button>
       </div>
 
       <div className="my-14">
