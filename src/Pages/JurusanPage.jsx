@@ -341,7 +341,7 @@ export default function JurusanPage() {
           {/* List Jurusan */}
           <div>
             <button className="bg-redPrimary  rounded-lg p-2 text-creamSecondary text-sm font-semibold mb-4">Rekayasa Perangkat Lunak - S1</button>
-            <Link to='/PgsdPage'>
+            <Link to="/PgsdPage">
               <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Guru Sekolah Dasar - S1</button>
             </Link>
             <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Guru PAUD - S1</button>
