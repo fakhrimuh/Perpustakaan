@@ -7,7 +7,7 @@ import React, { useState, useMemo } from 'react';
 const dataJson = {
   1: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Implementasi Algoritma Machine Learning untuk Prediksi Anomali dalam Jaringan Komputer',
+    judul: 'Pengaruh Penggunaan Media Pembelajaran Interaktif Terhadap Peningkatan Kemampuan Membaca Siswa Kelas II SD',
     penulis: 'John Doe',
     nim: '123456',
     tahun: 2022,
@@ -15,7 +15,7 @@ const dataJson = {
   },
   2: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Pengembangan Aplikasi Mobile Berbasis Android untuk Deteksi Kecurangan pada Sistem Keamanan',
+    judul: 'Implementasi Pendekatan Saintifik dalam Pembelajaran IPA untuk Meningkatkan Keterampilan Proses Siswa Kelas IV SD',
     penulis: 'Jane Doe',
     nim: '654321',
     tahun: 2021,
@@ -23,7 +23,7 @@ const dataJson = {
   },
   3: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Analisis Kinerja Jaringan Neural Networks dalam Pengenalan Citra Menggunakan Teknologi Deep Learning',
+    judul: 'Pengembangan Bahan Ajar Matematika Berbasis Kearifan Lokal Untuk Meningkatkan Minat Belajar Siswa SD',
     penulis: 'Bob Johnson',
     nim: '987654',
     tahun: 2023,
@@ -31,7 +31,7 @@ const dataJson = {
   },
   4: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Pemodelan dan Simulasi Sistem Keamanan Jaringan Komputer Menggunakan Metode Probabilistik',
+    judul: 'Efektivitas Penggunaan Teknologi Augmented Reality dalam Pembelajaran Bahasa Inggris di Sekolah Dasar',
     penulis: 'Alice Wonderland',
     nim: '456789',
     tahun: 2022,
@@ -39,7 +39,7 @@ const dataJson = {
   },
   5: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Pengembangan Sistem Manajemen Database Terdistribusi dengan Penerapan Teknologi Blockchain',
+    judul: 'Peningkatan Hasil Belajar Matematika melalui Penerapan Model Pembelajaran Kooperatif Tipe Jigsaw pada Siswa Kelas V SD',
     penulis: 'Charlie Brown',
     nim: '321654',
     tahun: 2023,
@@ -47,7 +47,7 @@ const dataJson = {
   },
   6: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Optimasi Kinerja Komputasi Awan dalam Penyediaan Layanan Skalabilitas dan Ketersediaan',
+    judul: 'Evaluasi Implementasi Kurikulum 2013 dalam Pembelajaran Tematik di Sekolah Dasar',
     penulis: 'Eva Green',
     nim: '987123',
     tahun: 2021,
@@ -55,7 +55,7 @@ const dataJson = {
   },
   7: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Penerapan Teknologi Internet of Things (IoT) untuk Monitoring dan Kontrol Energi pada Smart Home',
+    judul: 'Pengaruh Penggunaan Metode Peer Tutoring Terhadap Kemandirian Belajar Siswa SD',
     penulis: 'David Copperfield',
     nim: '111222',
     tahun: 2022,
@@ -63,7 +63,7 @@ const dataJson = {
   },
   8: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Analisis Perbandingan Performa Algoritma Kriptografi dalam Keamanan Data',
+    judul: 'Pengembangan Modul Pembelajaran Berbasis Proyek untuk Meningkatkan Kreativitas Siswa Sekolah Dasar',
     penulis: 'Grace Kelly',
     nim: '333444',
     tahun: 2023,
@@ -71,7 +71,7 @@ const dataJson = {
   },
   9: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Pengembangan Sistem Penyaringan Spam Email dengan Teknologi Pembelajaran Mesin (Machine Learning)',
+    judul: 'Analisis Kesulitan Belajar Matematika pada Siswa Sekolah Dasar dan Strategi Mengatasinya',
     penulis: 'George Orwell',
     nim: '555666',
     tahun: 2021,
@@ -79,7 +79,7 @@ const dataJson = {
   },
   10: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Rancang Bangun Aplikasi Web dengan Konsep Progressive Web App (PWA) untuk Optimalisasi Kinerja',
+    judul: 'Pengaruh Keterlibatan Orang Tua dalam Pembelajaran Anak di Sekolah Dasar',
     penulis: 'Mary Shelley',
     nim: '777888',
     tahun: 2022,
@@ -87,7 +87,7 @@ const dataJson = {
   },
   11: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Evaluasi dan Optimasi Keamanan Aplikasi Mobile berbasis iOS dalam Mengatasi Ancaman Keamanan',
+    judul: 'Pengembangan Buku Cerita Interaktif sebagai Media Pembelajaran Bahasa Indonesia di Kelas I SD',
     penulis: 'Farhan Maulana',
     nim: '123456',
     tahun: 2022,
@@ -95,7 +95,7 @@ const dataJson = {
   },
   12: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Penggunaan Teknologi Big Data dalam Analisis Pola Perilaku Pengguna Situs Web',
+    judul: 'Evaluasi Implementasi Pembelajaran Tematik pada Siswa Kelas III SD dalam Perspektif Kesiapan Guru',
     penulis: 'Dina Pratiwi',
     nim: '654321',
     tahun: 2021,
@@ -103,7 +103,7 @@ const dataJson = {
   },
   13: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Sistem Pendeteksian Intrusi dengan Pendekatan Anomali dan Tanda Tangan dalam Jaringan Komputer',
+    judul: 'Pemanfaatan Teknologi Mobile dalam Meningkatkan Keterampilan Menulis Siswa Kelas IV SD',
     penulis: 'Yoga Prakasa',
     nim: '987654',
     tahun: 2023,
@@ -111,7 +111,7 @@ const dataJson = {
   },
   14: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Pengembangan Aplikasi E-commerce Berbasis Cloud untuk Efisiensi Penyimpanan Data dan Aksesibilitas',
+    judul: 'Analisis Efektivitas Penggunaan Permainan Edukatif dalam Pembelajaran Matematika di Sekolah Dasar',
     penulis: 'Maya Sari',
     nim: '456789',
     tahun: 2022,
@@ -119,7 +119,7 @@ const dataJson = {
   },
   15: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Rancang Bangun Sistem Manajemen Kinerja Jaringan pada Infrastruktur Cloud Computing',
+    judul: 'Pengaruh Lingkungan Sekolah dan Dukungan Keluarga terhadap Prestasi Belajar Siswa SD',
     penulis: 'Agus Susanto',
     nim: '321654',
     tahun: 2023,
@@ -127,7 +127,7 @@ const dataJson = {
   },
   16: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Analisis dan Pengembangan Teknologi Blockchain untuk Keamanan dan Keabsahan Data Riwayat Medis Elektronik',
+    judul: 'Pengembangan Model Pembelajaran Inklusif untuk Siswa Berkebutuhan Khusus di Sekolah Dasar',
     penulis: 'Indah Lestari',
     nim: '987123',
     tahun: 2021,
@@ -135,7 +135,7 @@ const dataJson = {
   },
   17: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Implementasi Sistem Manajemen Relasi Basis Data NoSQL pada Lingkungan Sistem Terdistribusi',
+    judul: 'Implementasi Metode Project-Based Learning dalam Pembelajaran IPA untuk Siswa Kelas V SD',
     penulis: 'Rizki Ramadhan',
     nim: '111222',
     tahun: 2022,
@@ -143,7 +143,7 @@ const dataJson = {
   },
   18: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Penerapan Teknologi Augmented Reality dalam Edukasi Interaktif untuk Pengajaran Ilmu Komputer',
+    judul: 'Pengaruh Pembelajaran Berbasis Proyek terhadap Kreativitas Anak dalam Menyelesaikan Tugas di Kelas II SD',
     penulis: 'Mega Indriani',
     nim: '333444',
     tahun: 2023,
@@ -151,7 +151,7 @@ const dataJson = {
   },
   19: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Studi Kasus Performa Kinerja Algoritma Pengklasifikasi untuk Pengenalan Pola Teks dalam Bahasa Alami',
+    judul: 'Penerapan Pendekatan Saintifik dalam Pembelajaran Seni Budaya untuk Meningkatkan Keterampilan Berpikir Kritis Siswa SD',
     penulis: 'Aditya Pratama',
     nim: '555666',
     tahun: 2021,
@@ -159,7 +159,7 @@ const dataJson = {
   },
   20: {
     link: 'http://repository.upi.edu/97086/',
-    judul: 'Pengembangan Aplikasi Pengenalan Wajah untuk Sistem Keamanan dengan Teknologi Deep Neural Networks',
+    judul: 'Pengaruh Penggunaan Permainan Edukatif terhadap Minat Belajar Matematika pada Anak Kelas I SD',
     penulis: 'Novi Fitriyah',
     nim: '777888',
     tahun: 2022,
@@ -167,7 +167,7 @@ const dataJson = {
   },
 };
 
-export default function JurusanPage() {
+export default function PgsdPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
   const [searchTerm, setSearchTerm] = useState('');
@@ -214,7 +214,7 @@ export default function JurusanPage() {
     <div className="text-center mt-[110px]">
       {/* Title and Search bar */}
       <div className="mt-28">
-        <h1 className="text-3xl font-extrabold text-redPrimary mb-6">Rekayasa Perangkat Lunak</h1>
+        <h1 className="text-3xl font-extrabold text-redPrimary mb-6">Pendidikan Guru Sekolah Dasar</h1>
         <div>
           <div className="w-1/2 mx-auto mb-16 bg-redPrimary border-solid border-2 border-creamSecondary py-4 px-8 rounded-lg">
             <div className="flex gap-2 ">
@@ -233,7 +233,7 @@ export default function JurusanPage() {
               </button>
             </div>
             <div className="bg-creamSecondary w-fit px-4 mt-3 rounded-md">
-              <Typography className="text-redPrimary font-semibold text-sm my-2">Rekayasa Perangkat Lunak</Typography>
+              <Typography className="text-redPrimary font-semibold text-sm my-2">Pendidikan Guru Sekolah Dasar</Typography>
             </div>
           </div>
         </div>
@@ -340,10 +340,10 @@ export default function JurusanPage() {
           </div>
           {/* List Jurusan */}
           <div>
-            <button className="bg-redPrimary  rounded-lg p-2 text-creamSecondary text-sm font-semibold mb-4">Rekayasa Perangkat Lunak - S1</button>
-            <Link to="/PgsdPage">
-              <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Guru Sekolah Dasar - S1</button>
+            <Link to='/JurusanPage'>
+              <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Rekayasa Perangkat Lunak - S1</button>
             </Link>
+            <button className="rounded-lg p-2 bg-redPrimary text-creamSecondary text-sm font-semibold mb-4">Pendidikan Guru Sekolah Dasar - S1</button>
             <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Guru PAUD - S1</button>
             <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Multimedia - S1</button>
             <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Teknik Komputer - S1</button>

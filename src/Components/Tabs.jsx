@@ -1,46 +1,37 @@
-import { Tooltip } from "@material-tailwind/react";
-import React, { useState } from "react";
+import { Tooltip } from '@material-tailwind/react';
+import React, { useState } from 'react';
 
 // Import image Local E-journal
-import SageJournals from "../Asset/Tabs/E-Journal/Sage Journals.png";
-import SageResearch from "../Asset/Tabs/E-Journal/Sage research Method.png";
-import Cambridge from "../Asset/Tabs/E-Journal/Cambridge.png";
-import Upi from "../Asset/Tabs/E-Journal/UPI.png";
+import SageJournals from '../Asset/Tabs/E-Journal/SageJournalsTabs.png';
+import SageResearch from '../Asset/Tabs/E-Journal/Sage research Method.png';
+import Cambridge from '../Asset/Tabs/E-Journal/Cambridge.png';
+import Upi from '../Asset/Tabs/E-Journal/UPI.png';
 
 //Import image local E- Books
-import SageKnowledge from "../Asset/Tabs/E-Books/Sage Knowledge.png";
-import Anmol from "../Asset/Tabs/E-Books/Anmol Publication.png";
-import Emerald from "../Asset/Tabs/E-Books/Emerald.png";
-import Ieee from "../Asset/Tabs/E-Books/IEEE.png";
-import Springer from "../Asset/Tabs/E-Books/Springer.png";
-import Oxford from "../Asset/Tabs/E-Books/Oxford.png";
-import IgPublishing from "../Asset/Tabs/E-Books/image 1.png";
-import MathSolution from "../Asset/Tabs/E-Books/Mathsolution.png";
+import SageKnowledge from '../Asset/Tabs/E-Books/Sage Knowledge.png';
+import Anmol from '../Asset/Tabs/E-Books/P-Anmol.png';
+import Emerald from '../Asset/Tabs/E-Books/Emerald.png';
+import Ieee from '../Asset/Tabs/E-Books/IEEE.png';
+import Springer from '../Asset/Tabs/E-Books/Springer.png';
+import Oxford from '../Asset/Tabs/E-Books/Oxford.png';
+import IgPublishing from '../Asset/Tabs/E-Books/Ig Publishing.png';
+import MathSolution from '../Asset/Tabs/E-Books/math solutions.png';
 
 // import Links partner
-import Ipusnas from "../Asset/Tabs/Links Partner/Ipusnas.png";
-import Sinta from "../Asset/Tabs/Links Partner/Sinta.png";
-import Garuda from "../Asset/Tabs/Links Partner/Garuda Jurnal.png";
-import Rama from "../Asset/Tabs/Links Partner/Rama Repo.png";
-import OneSearch from "../Asset/Tabs/Links Partner/Indonesia onesearch.png";
-import BankIndonesia from "../Asset/Tabs/Links Partner/Bank Indonesia.png";
+import Ipusnas from '../Asset/Tabs/Links Partner/Ipusnas.png';
+import Sinta from '../Asset/Tabs/Links Partner/Sinta.png';
+import Garuda from '../Asset/Tabs/Links Partner/Garuda Jurnal.png';
+import Rama from '../Asset/Tabs/Links Partner/Rama Repo.png';
+import OneSearch from '../Asset/Tabs/Links Partner/Indonesia onesearch.png';
+import BankIndonesia from '../Asset/Tabs/Links Partner/Bank Indonesia.png';
 
 const Tab = ({ label, activeTab, onClick }) => {
   const isActive = activeTab === label;
 
   return (
-    <button
-      className={`relative p-4 rounded-t-lg font-bold text-2xl ${
-        isActive ? "text-redPrimary" : "text-gray-700"
-      }`}
-      onClick={() => onClick(label)}
-    >
+    <button className={`relative p-4 rounded-t-lg font-bold text-2xl ${isActive ? 'text-redPrimary' : 'text-gray-700'}`} onClick={() => onClick(label)}>
       {label}
-      <div
-        className={`absolute bottom-0 left-0 h-0.5 w-full bg-redPrimary transform-gpu transition-transform ${
-          isActive ? "scale-x-100" : "scale-x-0"
-        }`}
-      ></div>
+      <div className={`absolute bottom-0 left-0 h-0.5 w-full bg-redPrimary transform-gpu transition-transform ${isActive ? 'scale-x-100' : 'scale-x-0'}`}></div>
     </button>
   );
 };
@@ -56,13 +47,7 @@ const Tabs = ({ tabs, defaultActiveTab, content }) => {
     <div>
       <div className="mx-auto">
         {tabs.map((tab) => (
-          <Tab
-            key={tab}
-            label={tab}
-            activeTab={activeTab}
-            onClick={handleTabClick}
-            className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-          />
+          <Tab key={tab} label={tab} activeTab={activeTab} onClick={handleTabClick} className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" />
         ))}
       </div>
       <div className="mt-4 text-center mx-4 content-center grid xl:grid-cols-3  md:grid-cols-2">
@@ -72,7 +57,8 @@ const Tabs = ({ tabs, defaultActiveTab, content }) => {
               key={item.id}
               src={item.imageUrl}
               alt={item.altText}
-              className="w-10/12 mb-2 bg-white cursor-pointer"
+              className="w-10/12 h-fit mb-4 bg-white cursor-pointer shadow-xl
+             rounded-md"
             />
           </Tooltip>
         ))}
@@ -82,114 +68,114 @@ const Tabs = ({ tabs, defaultActiveTab, content }) => {
 };
 
 const PartnerTab = () => {
-  const tabs = ["E-Journal", "E-Books", "Links Partner"];
+  const tabs = ['E-Journal', 'E-Books', 'Links Partner'];
 
   const content = {
-    "E-Journal": [
+    'E-Journal': [
       {
         id: 1,
         imageUrl: SageJournals,
-        altText: "Sage Journals",
+        altText: 'Sage Journals',
       },
       {
         id: 2,
         imageUrl: SageResearch,
-        altText: "Sage Research Method",
+        altText: 'Sage Research Method',
       },
       {
         id: 3,
         imageUrl: Emerald,
-        altText: "Emerald Publishing",
+        altText: 'Emerald Publishing',
       },
       {
         id: 4,
         imageUrl: Springer,
-        altText: "Springer",
+        altText: 'Springer',
       },
       {
         id: 5,
         imageUrl: Oxford,
-        altText: "Oxford Academic",
+        altText: 'Oxford Academic',
       },
       {
         id: 6,
         imageUrl: Cambridge,
-        altText: "Cambridge University",
+        altText: 'Cambridge University',
       },
-      { id: 7, imageUrl: Upi, altText: "UPI" },
+      { id: 7, imageUrl: Upi, altText: 'UPI' },
     ],
-    "E-Books": [
+    'E-Books': [
       {
         id: 8,
         imageUrl: IgPublishing,
-        altText: "IG Publishing",
+        altText: 'IG Publishing',
       },
       {
         id: 9,
         imageUrl: Anmol,
-        altText: "Anmol Publications",
+        altText: 'Anmol Publications',
       },
       {
         id: 10,
         imageUrl: Emerald,
-        altText: "Emerald publishing",
+        altText: 'Emerald publishing',
       },
       {
         id: 11,
         imageUrl: Springer,
-        altText: "Springer",
+        altText: 'Springer',
       },
       {
         id: 12,
         imageUrl: Oxford,
-        altText: "Oxford",
+        altText: 'Oxford',
       },
       {
         id: 13,
         imageUrl: MathSolution,
-        altText: "Math Solutions",
+        altText: 'Math Solutions',
       },
       {
         id: 14,
         imageUrl: Ieee,
-        altText: "IEEE",
+        altText: 'IEEE',
       },
       {
         id: 15,
         imageUrl: SageKnowledge,
-        altText: "Sage Knowledge",
+        altText: 'Sage Knowledge',
       },
     ],
-    "Links Partner": [
+    'Links Partner': [
       {
         id: 16,
         imageUrl: Ipusnas,
-        altText: "IPusnas",
+        altText: 'IPusnas',
       },
       {
         id: 17,
         imageUrl: Sinta,
-        altText: "Sinta",
+        altText: 'Sinta',
       },
       {
         id: 18,
         imageUrl: Garuda,
-        altText: "Garuda",
+        altText: 'Garuda',
       },
       {
         id: 19,
         imageUrl: Rama,
-        altText: "Rama repository",
+        altText: 'Rama repository',
       },
       {
         id: 20,
         imageUrl: OneSearch,
-        altText: "One Search",
+        altText: 'One Search',
       },
       {
         id: 21,
         imageUrl: BankIndonesia,
-        altText: "Bank Indonesia",
+        altText: 'Bank Indonesia',
       },
     ],
   };
