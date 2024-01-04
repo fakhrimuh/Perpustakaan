@@ -232,7 +232,7 @@ export default function JurusanPage() {
                 Cari
               </button>
             </div>
-            <div className="bg-creamSecondary w-1/3 mt-3 rounded-md">
+            <div className="bg-creamSecondary w-fit px-4 mt-3 rounded-md">
               <Typography className="text-redPrimary font-semibold text-sm my-2">Rekayasa Perangkat Lunak</Typography>
             </div>
           </div>
@@ -341,7 +341,9 @@ export default function JurusanPage() {
           {/* List Jurusan */}
           <div>
             <button className="bg-redPrimary  rounded-lg p-2 text-creamSecondary text-sm font-semibold mb-4">Rekayasa Perangkat Lunak - S1</button>
-            <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Guru Sekolah Dasar - S1</button>
+            <Link to='/PgsdPage'>
+              <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Guru Sekolah Dasar - S1</button>
+            </Link>
             <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Guru PAUD - S1</button>
             <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Pendidikan Multimedia - S1</button>
             <button className="bg-creamSecondary text-redPrimary rounded-lg p-2 hover:bg-redPrimary hover:text-creamSecondary text-sm font-semibold mb-4">Teknik Komputer - S1</button>
