@@ -93,8 +93,9 @@ export default function HomePage() {
         {/* News */}
         <div className="News text-center px-auto py-4">
           <p className="text-4xl font-bold mb-3 text-redPrimary">Berita</p>
-          <div className="mx-4 content-center grid grid-cols-3">
+          <div className="mx-4 content-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <NewsCard
+              className="mx-auto"
               title="Kunjungan Professor Araya Piyakun, Ph.D. (Mahasarakham University Thailand) ke Perpustakaan UPI"
               date="2 Februari 20222"
               writer="Asep Suadji"
@@ -102,12 +103,14 @@ export default function HomePage() {
             />
 
             <NewsCard
+              className="mx-auto"
               title="Perpustakaan UPI menerima Sumbangan Buku dari Bapak Prof. Dr. H. Mohammad Fakry Gaffar, M.Ed"
               date="2 Februari 20222"
               writer="Asep Suadji"
               news="Dalam menanggapi perhatian yang luar biasa terhadap kemajuan pendidikan di Indonesia, Perpustakaan Universitas Pendidikan Indonesia (UPI) dengan tulus mengucapkan terima kasih kepada Prof. Dr. H. Mohammad Fakry Gaffar, M.Ed., yang telah memberikan sumbangan buku yang sangat berharga. Berikut adalah rincian sumbangan buku yang telah diberikan: Manajemen Pendidikan Indonesia/UPI Press/ 10 eksemplar Dinamika Pendidikan Nasional/UPI Press"
             />
             <NewsCard
+              className="mx-auto"
               title="Kelas Literasi informasi bagi Dosen dan Mahasiswa Tingkat Akhir di Kampus UPI Serang"
               date="2 Februari 20222"
               writer="Asep Suadji"
