@@ -217,8 +217,8 @@ export default function HeaderNavbar() {
           </div>
 
           {/* Responsive hamburger */}
-          <IconButton variant="text" color="blue-gray" className="lg:hidden" onClick={() => setOpenNav(!openNav)}>
-            {openNav ? <XMarkIcon className="h-6 w-6" strokeWidth={2} /> : <Bars3Icon className="h-6 w-6" strokeWidth={2} />}
+          <IconButton variant="text" className="lg:hidden" onClick={() => setOpenNav(!openNav)}>
+            {openNav ? <XMarkIcon className="h-6 w-6" strokeWidth={2} /> : <Bars3Icon className="h-6 w-6 text-redPrimary" strokeWidth={2} />}
           </IconButton>
         </div>
         <Collapse open={openNav}>
