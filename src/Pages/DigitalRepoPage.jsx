@@ -381,31 +381,32 @@ export default function DigitalRepository() {
 
   return (
     <div className="mt-[110px]">
-      <div class="relative">
-        <img src={Upi} alt="Gambar" class="w-full h-auto object" />
+      <div className="relative">
+        <img src={Upi} alt="Gambar" className="w-full h-auto object" />
 
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[-100px] text-white text-center">
-          <h1 class="text-4xl font-bold">Digital Repository</h1>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[-100px] text-white text-center mb-2">
+          <h1 className="text-4xl font-bold sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl">Digital Repository</h1>
         </div>
 
-        <div class="absolute w-full h-fit top-full left-1/2 transform -translate-x-1/2 -translate-y-14">
-          <div className="w-1/2 my-4 flex gap-2 mx-auto mb-16 bg-redPrimary border-solid border-2 border-creamSecondary py-4 px-8 rounded-lg">
+        <div className="absolute w-full h-fit top-full left-1/2 transform -translate-x-1/2 -translate-y-14">
+          <div className="w-full sm:w-1/2 mx-auto mb-16 bg-redPrimary border-solid border-2 border-creamSecondary py-4 px-8 rounded-lg flex flex-col sm:flex-row items-center gap-2 justify-center">
             <Input
               type="text"
               placeholder="Kata Kunci"
               onChange={(e) => setSearchTerm(e.target.value)}
               value={searchTerm}
-              className="!border-2 !border-creamSecondary  text-creamSecondary  placeholder-creamSecondary"
+              className="!border-2 !border-creamSecondary text-creamSecondary placeholder-creamSecondary mb-4 sm:mb-0 sm:mr-2"
               labelProps={{
                 className: 'hidden',
               }}
             />
-            <button onClick={handleSearch} className="bg-creamSecondary font-semibold text-redPrimary border-2 px-6 rounded-lg hover:bg-redPrimary hover:text-creamSecondary">
+            <button onClick={handleSearch} className="bg-creamSecondary font-semibold text-redPrimary border-2 py-1 px-6 rounded-lg hover:bg-redPrimary hover:text-creamSecondary text-base sm:text-lg">
               Cari
             </button>
           </div>
         </div>
       </div>
+
       <div className="mt-32 container mx-auto">
         {isSearchPerformed && (
           <div className="border h-fit border-redPrimary mb-10 rounded-lg">

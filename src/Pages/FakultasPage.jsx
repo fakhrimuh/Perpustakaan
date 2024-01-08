@@ -437,19 +437,19 @@ export default function FakultasPage() {
           <h1 class="text-4xl font-bold">Kampus Cibiru</h1>
         </div>
 
-        <div class="absolute w-full h-fit top-full left-1/2 transform -translate-x-1/2 -translate-y-16">
-          <div className="w-1/2 my-4 flex gap-2 mx-auto mb-16 bg-redPrimary border-solid border-2 border-creamSecondary py-4 px-8 rounded-lg">
+        <div className="absolute w-full h-fit top-full left-1/2 transform -translate-x-1/2 -translate-y-14">
+          <div className="w-full sm:w-1/2 mx-auto mb-16 bg-redPrimary border-solid border-2 border-creamSecondary py-4 px-8 rounded-lg flex flex-col sm:flex-row items-center gap-2 justify-center">
             <Input
               type="text"
               placeholder="Kata Kunci"
               onChange={(e) => setSearchTerm(e.target.value)}
               value={searchTerm}
-              className="!border-2 !border-creamSecondary  text-creamSecondary  placeholder-creamSecondary"
+              className="!border-2 !border-creamSecondary text-creamSecondary placeholder-creamSecondary mb-4 sm:mb-0 sm:mr-2"
               labelProps={{
                 className: 'hidden',
               }}
             />
-            <button onClick={handleSearch} className="bg-creamSecondary font-semibold text-redPrimary border-2 px-6 rounded-lg hover:bg-redPrimary hover:text-creamSecondary">
+            <button onClick={handleSearch} className="bg-creamSecondary font-semibold text-redPrimary border-2 py-1 px-6 rounded-lg hover:bg-redPrimary hover:text-creamSecondary text-base sm:text-lg">
               Cari
             </button>
           </div>

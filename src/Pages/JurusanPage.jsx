@@ -216,14 +216,14 @@ export default function JurusanPage() {
       <div className="mt-28">
         <h1 className="text-3xl font-extrabold text-redPrimary mb-6">Rekayasa Perangkat Lunak</h1>
         <div>
-          <div className="w-1/2 mx-auto mb-16 bg-redPrimary border-solid border-2 border-creamSecondary py-4 px-8 rounded-lg">
-            <div className="flex gap-2 ">
+          <div className="w-full sm:w-3/4 lg:w-1/2 xl:w-1/3 mx-auto mb-8 sm:mb-16 bg-redPrimary border-solid border-2 border-creamSecondary py-4 px-8 rounded-lg">
+            <div className="flex flex-col sm:flex-row gap-2">
               <Input
                 type="text"
                 placeholder="Kata Kunci"
                 onChange={(e) => setSearchTerm(e.target.value)}
                 value={searchTerm}
-                className="!border-2 !border-creamSecondary  text-creamSecondary  placeholder-creamSecondary"
+                className="!border-2 !border-creamSecondary text-creamSecondary placeholder-creamSecondary mb-4 sm:mb-0"
                 labelProps={{
                   className: 'hidden',
                 }}
@@ -232,8 +232,8 @@ export default function JurusanPage() {
                 Cari
               </button>
             </div>
-            <div className="bg-creamSecondary w-fit px-4 mt-3 rounded-md">
-              <Typography className="text-redPrimary font-semibold text-sm my-2">Rekayasa Perangkat Lunak</Typography>
+            <div className="w-fit px-4 mt-3 rounded-md">
+              <Typography className="text-creamSecondary font-semibold text-sm my-2">Rekayasa Perangkat Lunak</Typography>
             </div>
           </div>
         </div>
